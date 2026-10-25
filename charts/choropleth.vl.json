@@ -1,0 +1,156 @@
+
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+
+  "title": {
+    "text": "NSW National Parks: Where Do Australians Visit?",
+    "subtitle": "Selected national parks: domestic visits in 2024–25",
+    "anchor": "middle",
+    "fontSize": 20,
+    "subtitleFontSize": 13,
+    "subtitleColor": "#555555",
+    "offset": 15
+  },
+
+  "width": 650,
+  "height": 520,
+  "background": "white",
+  "padding": 10,
+
+  "projection": {
+    "type": "identity",
+    "reflectY": true
+  },
+
+  "layer": [
+    {
+      "description": "NSW state background",
+
+      "data": {
+        "url": "data/nsw_state_outline.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+
+      "mark": {
+        "type": "geoshape",
+        "fill": "#e6e9e6",
+        "stroke": "#555555",
+        "strokeWidth": 1.5
+      }
+    },
+
+    {
+      "description": "National parks coloured by domestic visits",
+
+      "data": {
+        "url": "data/nsw_park_boundaries.geojson",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+
+      "transform": [
+        {
+          "lookup": "properties.park",
+          "from": {
+            "data": {
+              "url": "data/capad_2024.csv",
+              "format": {
+                "type": "csv"
+              }
+            },
+            "key": "park",
+            "fields": [
+              "park_area_ha",
+              "reserve_type"
+            ]
+          }
+        },
+        {
+          "lookup": "properties.park",
+          "from": {
+            "data": {
+              "url": "data/nsw_park_visitors_2024_25.csv",
+              "format": {
+                "type": "csv"
+              }
+            },
+            "key": "park",
+            "fields": [
+              "visits"
+            ]
+          }
+        },
+        {
+          "filter": "isValid(datum.visits) && isValid(datum.park_area_ha)"
+        }
+      ],
+
+      "mark": {
+        "type": "geoshape",
+        "stroke": "#354e3b",
+        "strokeWidth": 0.6,
+        "fillOpacity": 0.95
+      },
+
+      "encoding": {
+        "color": {
+          "field": "visits",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "greens"
+          },
+          "legend": {
+            "title": "Estimated domestic visits",
+            "orient": "bottom",
+            "direction": "horizontal",
+            "gradientLength": 300,
+            "gradientThickness": 14,
+            "format": ".2s",
+            "labelFontSize": 12,
+            "titleFontSize": 13
+          }
+        },
+
+        "tooltip": [
+          {
+            "field": "properties.park",
+            "type": "nominal",
+            "title": "National park"
+          },
+          {
+            "field": "visits",
+            "type": "quantitative",
+            "title": "Domestic visits",
+            "format": ",.0f"
+          },
+          {
+            "field": "park_area_ha",
+            "type": "quantitative",
+            "title": "Park area (ha)",
+            "format": ",.0f"
+          },
+          {
+            "field": "reserve_type",
+            "type": "nominal",
+            "title": "Reserve type"
+          }
+        ]
+      }
+    }
+  ],
+
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "legend": {
+      "labelFont": "Arial",
+      "titleFont": "Arial"
+    }
+  }
+}

@@ -1,0 +1,186 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  
+    "title": {
+      "text": "How Does National Park Size Differ Between States?",
+      "subtitle": "Individual park areas (CAPAD 2024). Diamonds indicate the largest park in each state.",
+      "anchor": "middle",
+      "fontSize": 19,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "offset": 15
+    },
+  
+    "width": 690,
+    "height": 375,
+    "background": "white",
+  
+    "data": {
+      "url": "data/national_park_areas.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "area_ha": "number"
+        }
+      }
+    },
+  
+    "transform": [
+      {
+        "filter": "isValid(datum.area_ha) && datum.area_ha > 0"
+      },
+      {
+        "filter": "indexof(['NSW','VIC','QLD','SA','WA','TAS','NT','ACT'], datum.state_code) >= 0"
+      },
+      {
+        "calculate": "datum.area_ha / 100",
+        "as": "area_km2"
+      }
+    ],
+  
+    "encoding": {
+      "y": {
+        "field": "state",
+        "type": "nominal",
+        "sort": [
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory",
+          "Australian Capital Territory"
+        ],
+        "title": null,
+        "axis": {
+          "labelFontSize": 12,
+          "labelLimit": 210,
+          "ticks": false,
+          "domain": false
+        }
+      },
+  
+      "x": {
+        "field": "area_km2",
+        "type": "quantitative",
+        "scale": {
+          "type": "log",
+          "base": 10
+        },
+        "axis": {
+          "title": "Park area (km²) — logarithmic scale",
+          "format": "~s",
+          "grid": true,
+          "gridColor": "#e5eae6",
+          "labelFontSize": 11,
+          "titleFontSize": 13,
+          "titlePadding": 12
+        }
+      }
+    },
+  
+    "layer": [
+      {
+        "description": "National park size distributions",
+  
+        "mark": {
+          "type": "boxplot",
+          "extent": 1.5,
+          "size": 24,
+  
+          "box": {
+            "fill": "#9ccab1",
+            "stroke": "#235940",
+            "strokeWidth": 1.2
+          },
+  
+          "median": {
+            "color": "#103e28",
+            "strokeWidth": 2.5
+          },
+  
+          "rule": {
+            "stroke": "#627e6c"
+          },
+  
+          "outliers": {
+            "filled": true,
+            "color": "#ad723d",
+            "size": 35,
+            "opacity": 0.65
+          }
+        }
+      },
+  
+      {
+        "description": "Largest national park in each state",
+  
+        "transform": [
+          {
+            "joinaggregate": [
+              {
+                "op": "max",
+                "field": "area_km2",
+                "as": "largest_area_km2"
+              }
+            ],
+            "groupby": [
+              "state"
+            ]
+          },
+          {
+            "filter": "datum.area_km2 === datum.largest_area_km2"
+          }
+        ],
+  
+        "mark": {
+          "type": "point",
+          "shape": "diamond",
+          "filled": true,
+          "size": 115,
+          "color": "#a43e16",
+          "stroke": "white",
+          "strokeWidth": 1
+        },
+  
+        "encoding": {
+          "tooltip": [
+            {
+              "field": "park",
+              "type": "nominal",
+              "title": "Largest park in state"
+            },
+            {
+              "field": "state",
+              "type": "nominal",
+              "title": "State or territory"
+            },
+            {
+              "field": "area_km2",
+              "type": "quantitative",
+              "title": "Area (km²)",
+              "format": ",.1f"
+            },
+            {
+              "field": "area_ha",
+              "type": "quantitative",
+              "title": "Area (ha)",
+              "format": ",.0f"
+            }
+          ]
+        }
+      }
+    ],
+  
+    "config": {
+      "view": {
+        "stroke": null
+      },
+      "axis": {
+        "labelFont": "Arial",
+        "titleFont": "Arial"
+      }
+    }
+  }
+  

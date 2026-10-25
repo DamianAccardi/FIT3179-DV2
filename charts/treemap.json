@@ -1,0 +1,149 @@
+{
+  "$schema": "https://vega.github.io/schema/vega/v6.json",
+  "description": "Australia's 40 largest national parks by mapped CAPAD area.",
+  "width": 830,
+  "height": 510,
+  "padding": 15,
+  "autosize": "pad",
+  "background": "white",
+  "title": {
+    "text": "Australia's 40 Largest National Parks",
+    "subtitle": "Rectangle size shows protected area in hectares (CAPAD 2024)",
+    "anchor": "middle",
+    "fontSize": 20,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555",
+    "offset": 15
+  },
+  "data": [
+    {
+      "name": "tree",
+      "url": "data/national_park_treemap.csv",
+      "format": {
+        "type": "csv",
+        "parse": {"area_ha": "number"}
+      },
+      "transform": [
+        {
+          "type": "stratify",
+          "key": "id",
+          "parentKey": "parent"
+        },
+        {
+          "type": "treemap",
+          "field": "area_ha",
+          "method": "squarify",
+          "sort": {"field": "value", "order": "descending"},
+          "paddingInner": 2,
+          "paddingOuter": 3,
+          "round": true,
+          "size": [{"signal": "width"}, {"signal": "height"}]
+        }
+      ]
+    },
+    {
+      "name": "parks",
+      "source": "tree",
+      "transform": [
+        {"type": "filter", "expr": "datum.depth === 2"},
+        {
+          "type": "formula",
+          "as": "display_state",
+          "expr": "datum.state || (datum.data && datum.data.state) || 'Unknown'"
+        },
+        {
+          "type": "formula",
+          "as": "display_park",
+          "expr": "datum.park || (datum.data && datum.data.park) || ''"
+        }
+      ]
+    }
+  ],
+  "scales": [
+    {
+      "name": "stateColour",
+      "type": "ordinal",
+      "domain": {"data": "parks", "field": "display_state"},
+      "range": [
+        "#9ccca8", "#99bfe5", "#f4cc91", "#c2acd9",
+        "#94d1d0", "#f4aeb3", "#c9d28e", "#a7b6d0"
+      ]
+    }
+  ],
+  "legends": [
+    {
+      "fill": "stateColour",
+      "title": "State or territory",
+      "orient": "bottom",
+      "direction": "horizontal",
+      "columns": 4,
+      "symbolType": "square",
+      "symbolSize": 120
+    }
+  ],
+  "marks": [
+    {
+      "type": "rect",
+      "from": {"data": "parks"},
+      "encode": {
+        "update": {
+          "x": {"field": "x0"},
+          "y": {"field": "y0"},
+          "x2": {"field": "x1"},
+          "y2": {"field": "y1"},
+          "fill": {"scale": "stateColour", "field": "display_state"},
+          "stroke": {"value": "white"},
+          "strokeWidth": {"value": 1},
+          "tooltip": {
+            "signal": "{'National park': datum.display_park, 'State': datum.display_state, 'Area (ha)': format(datum.area_ha, ',.0f'), 'Area (km²)': format(datum.area_ha / 100, ',.0f')}"
+          }
+        },
+        "hover": {
+          "stroke": {"value": "#253b30"},
+          "strokeWidth": {"value": 2}
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "parks"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.x0 + 6"},
+          "y": {"signal": "datum.y0 + 7"},
+          "text": {"field": "display_park"},
+          "fontSize": {"value": 11},
+          "fontWeight": {"value": "bold"},
+          "fill": {"value": "#1e3028"},
+          "align": {"value": "left"},
+          "baseline": {"value": "top"},
+          "limit": {"signal": "max(0, datum.x1 - datum.x0 - 12)"},
+          "opacity": {
+            "signal": "(datum.x1 - datum.x0) > 105 && (datum.y1 - datum.y0) > 34 ? 1 : 0"
+          }
+        }
+      }
+    },
+    {
+      "type": "text",
+      "from": {"data": "parks"},
+      "interactive": false,
+      "encode": {
+        "update": {
+          "x": {"signal": "datum.x0 + 6"},
+          "y": {"signal": "datum.y0 + 24"},
+          "text": {"signal": "format(datum.area_ha / 1000000, '.2f') + 'M ha'"},
+          "fontSize": {"value": 10},
+          "fill": {"value": "#243d32"},
+          "align": {"value": "left"},
+          "baseline": {"value": "top"},
+          "opacity": {
+            "signal": "(datum.x1 - datum.x0) > 130 && (datum.y1 - datum.y0) > 50 ? 1 : 0"
+          }
+        }
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}}
+}

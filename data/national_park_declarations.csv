@@ -1,0 +1,712 @@
+park,state,pa_id,first_protected_year,decade
+Namadgi,Australian Capital Territory,ACT_39,1993,1990
+Barrington Tops,New South Wales,NSW_N0002,1889,1880
+Cocoparra,New South Wales,NSW_N0008,1889,1880
+Kanangra-Boyd,New South Wales,NSW_N0016,1889,1880
+Macquarie Pass,New South Wales,NSW_N0020,1889,1880
+Blue Mountains,New South Wales,NSW_N0004,1967,1960
+Bouddi,New South Wales,NSW_N0005,1967,1960
+Brisbane Water,New South Wales,NSW_N0006,1967,1960
+Dharug,New South Wales,NSW_N0010,1967,1960
+Dorrigo,New South Wales,NSW_N0011,1967,1960
+Gibraltar Range,New South Wales,NSW_N0012,1967,1960
+Heathcote,New South Wales,NSW_N0015,1967,1960
+Kinchega,New South Wales,NSW_N0017,1967,1960
+Kosciuszko,New South Wales,NSW_N0018,1967,1960
+Ku-ring-gai Chase,New South Wales,NSW_N0019,1967,1960
+Morton,New South Wales,NSW_N0022,1967,1960
+Mount Kaputar,New South Wales,NSW_N0038,1967,1960
+New England,New South Wales,NSW_N0028,1967,1960
+Royal,New South Wales,NSW_N0030,1967,1960
+Warrumbungle,New South Wales,NSW_N0035,1967,1960
+Bald Rock,New South Wales,NSW_N0001,1971,1970
+Beowa,New South Wales,NSW_N0003,1971,1970
+Seven Mile Beach,New South Wales,NSW_N0031,1971,1970
+Weddin Mountains,New South Wales,NSW_N0036,1971,1970
+Crowdy Bay,New South Wales,NSW_N0009,1972,1970
+Guy Fawkes River,New South Wales,NSW_N0013,1972,1970
+Hat Head,New South Wales,NSW_N0014,1972,1970
+Mount Imlay,New South Wales,NSW_N0023,1972,1970
+Myall Lakes,New South Wales,NSW_N0026,1972,1970
+Sturt,New South Wales,NSW_N0032,1972,1970
+Thirlmere Lakes,New South Wales,NSW_N0033,1972,1970
+Willandra,New South Wales,NSW_N0037,1972,1970
+Mimosa Rocks,New South Wales,NSW_N0021,1973,1970
+Murramarang,New South Wales,NSW_N0025,1973,1970
+Broadwater,New South Wales,NSW_N0007,1974,1970
+Sydney Harbour,New South Wales,NSW_N0039,1975,1970
+Werrikimbe,New South Wales,NSW_N0042,1975,1970
+Budawang,New South Wales,NSW_N0045,1977,1970
+Mallee Cliffs,New South Wales,NSW_N0044,1977,1970
+Cathedral Rock,New South Wales,NSW_N0046,1978,1970
+Border Ranges,New South Wales,NSW_N0050,1979,1970
+Deua,New South Wales,NSW_N0047,1979,1970
+Marramarra,New South Wales,NSW_N0052,1979,1970
+Mungo,New South Wales,NSW_N0049,1979,1970
+Wadbilliga,New South Wales,NSW_N0048,1979,1970
+Wollemi,New South Wales,NSW_N0051,1979,1970
+Bundjalung,New South Wales,NSW_N0041,1980,1980
+Conimbla,New South Wales,NSW_N0053,1980,1980
+Nymboida,New South Wales,NSW_N0055,1980,1980
+Yuraygir,New South Wales,NSW_N0040,1980,1980
+Boonoo Boonoo,New South Wales,NSW_N0056,1982,1980
+Tarlo River,New South Wales,NSW_N0058,1982,1980
+Woko,New South Wales,NSW_N0057,1982,1980
+Goulburn River,New South Wales,NSW_N0060,1983,1980
+Nangar,New South Wales,NSW_N0063,1983,1980
+Nightcap,New South Wales,NSW_N0062,1983,1980
+Washpool,New South Wales,NSW_N0061,1983,1980
+Kamay Botany Bay,New South Wales,NSW_N0066,1984,1980
+Tomaree,New South Wales,NSW_N0065,1984,1980
+Warrabah,New South Wales,NSW_N0064,1984,1980
+Budderoo,New South Wales,NSW_N0069,1986,1980
+Oxley Wild Rivers,New South Wales,NSW_N0043,1986,1980
+Kings Plains,New South Wales,NSW_N0067,1988,1980
+Yengo,New South Wales,NSW_N0068,1988,1980
+Garigal,New South Wales,NSW_N0076,1991,1990
+Nattai,New South Wales,NSW_N0078,1991,1990
+Wyrrabalong,New South Wales,NSW_N0077,1991,1990
+Booti Booti,New South Wales,NSW_N0081,1992,1990
+Bournda,New South Wales,NSW_N0082,1992,1990
+Cattai,New South Wales,NSW_N0079,1992,1990
+Georges River,New South Wales,NSW_N0080,1992,1990
+Lane Cove,New South Wales,NSW_N0083,1992,1990
+Biamanga,New South Wales,NSW_N0071,1994,1990
+Conjola,New South Wales,NSW_N0085,1994,1990
+Gardens of Stone,New South Wales,NSW_N0087,1994,1990
+Popran,New South Wales,NSW_N0086,1994,1990
+Abercrombie River,New South Wales,NSW_N0093,1995,1990
+Bongil Bongil,New South Wales,NSW_N0089,1995,1990
+Eurobodalla,New South Wales,NSW_N0095,1995,1990
+Goobang,New South Wales,NSW_N0096,1995,1990
+Jervis Bay,New South Wales,NSW_N0090,1995,1990
+Mount Jerusalem,New South Wales,NSW_N0097,1995,1990
+Tooloom,New South Wales,NSW_N0091,1995,1990
+Toonumbar,New South Wales,NSW_N0092,1995,1990
+Bellinger River,New South Wales,NSW_N0103,1996,1990
+Brindabella,New South Wales,NSW_N0098,1996,1990
+Chaelundi,New South Wales,NSW_N0104,1996,1990
+Coolah Tops,New South Wales,NSW_N0088,1996,1990
+Culgoa,New South Wales,NSW_N0099,1996,1990
+Dooragan,New South Wales,NSW_N0108,1996,1990
+Dunggir,New South Wales,NSW_N0105,1996,1990
+Fortis Creek,New South Wales,NSW_N0106,1996,1990
+Gundabooka,New South Wales,NSW_N0100,1996,1990
+Mount Royal,New South Wales,NSW_N0107,1996,1990
+Nymboi-Binderay,New South Wales,NSW_N0109,1996,1990
+Richmond Range,New South Wales,NSW_N0110,1996,1990
+Scheyville,New South Wales,NSW_N0101,1996,1990
+South East Forest,New South Wales,NSW_N0111,1996,1990
+Willi Willi,New South Wales,NSW_N0102,1996,1990
+Bago Bluff,New South Wales,NSW_N0114,1998,1990
+Barakee,New South Wales,NSW_N0115,1998,1990
+Barool,New South Wales,NSW_N0139,1998,1990
+Basket Swamp,New South Wales,NSW_N0134,1998,1990
+Bindarri,New South Wales,NSW_N0131,1998,1990
+Biriwal Bulga,New South Wales,NSW_N0118,1998,1990
+Bungawalbin,New South Wales,NSW_N0136,1998,1990
+Butterleaf,New South Wales,NSW_N0137,1998,1990
+Capoompeta,New South Wales,NSW_N0138,1998,1990
+Carrai,New South Wales,NSW_N0119,1998,1990
+Cascade,New South Wales,NSW_N0120,1998,1990
+Coorabakh,New South Wales,NSW_N0117,1998,1990
+Cottan-Bimbang,New South Wales,NSW_N0123,1998,1990
+Cunnawarra,New South Wales,NSW_N0121,1998,1990
+Ghin-Doo-Ee,New South Wales,NSW_N0125,1998,1990
+Goonengerry,New South Wales,NSW_N0140,1998,1990
+Indwarra,New South Wales,NSW_N0135,1998,1990
+Junuy Juluum,New South Wales,NSW_N0116,1998,1990
+Koreelah,New South Wales,NSW_N0141,1998,1990
+Kumbatine,New South Wales,NSW_N0124,1998,1990
+Mallanganee,New South Wales,NSW_N0142,1998,1990
+Maria,New South Wales,NSW_N0127,1998,1990
+Maryland,New South Wales,NSW_N0143,1998,1990
+Mebbin,New South Wales,NSW_N0144,1998,1990
+Middle Brother,New South Wales,NSW_N0128,1998,1990
+Mooball,New South Wales,NSW_N0145,1998,1990
+Mount Clunie,New South Wales,NSW_N0146,1998,1990
+Mount Nothofagus,New South Wales,NSW_N0147,1998,1990
+Mount Pikapene,New South Wales,NSW_N0148,1998,1990
+Mummel Gulf,New South Wales,NSW_N0129,1998,1990
+Mutawintji,New South Wales,NSW_N0113,1998,1990
+Nowendoc,New South Wales,NSW_N0130,1998,1990
+Ramornie,New South Wales,NSW_N0150,1998,1990
+Single,New South Wales,NSW_N0151,1998,1990
+Tapin Tops,New South Wales,NSW_N0122,1998,1990
+Towarri,New South Wales,NSW_N0112,1998,1990
+Ulidarra,New South Wales,NSW_N0149,1998,1990
+Wallingat,New South Wales,NSW_N0132,1998,1990
+Warra,New South Wales,NSW_N0153,1998,1990
+Watagans,New South Wales,NSW_N0133,1998,1990
+Werakata,New South Wales,NSW_N0126,1998,1990
+Yabbra,New South Wales,NSW_N0154,1998,1990
+Bangadilly,New South Wales,NSW_N0160,2000,2000
+Benambra,New South Wales,NSW_N0172,2000,2000
+Bimberamala,New South Wales,NSW_N0161,2000,2000
+Bugong,New South Wales,NSW_N0162,2000,2000
+Clyde River,New South Wales,NSW_N0163,2000,2000
+Gourock,New South Wales,NSW_N0164,2000,2000
+Gulaga,New South Wales,NSW_N0165,2000,2000
+Jerrawangala,New South Wales,NSW_N0166,2000,2000
+Kooraban,New South Wales,NSW_N0167,2000,2000
+Kwiambal,New South Wales,NSW_N0156,2000,2000
+Livingstone,New South Wales,NSW_N0157,2000,2000
+Meroo,New South Wales,NSW_N0168,2000,2000
+Minjary,New South Wales,NSW_N0158,2000,2000
+Monga,New South Wales,NSW_N0169,2000,2000
+Paroo-Darling,New South Wales,NSW_N0175,2000,2000
+Tallaganda,New South Wales,NSW_N0170,2000,2000
+Woomargama,New South Wales,NSW_N0159,2000,2000
+Yanununbeyan,New South Wales,NSW_N0171,2000,2000
+Arakwal,New South Wales,NSW_N0173,2001,2000
+Belford,New South Wales,NSW_N0177,2002,2000
+Cataract,New South Wales,NSW_N0178,2002,2000
+Oolambeyan,New South Wales,NSW_N0176,2002,2000
+Timbarra,New South Wales,NSW_N0180,2002,2000
+Turon,New South Wales,NSW_N0174,2002,2000
+Yarriabini,New South Wales,NSW_N0181,2002,2000
+Wallarah,New South Wales,NSW_N0182,2003,2000
+Wollumbin,New South Wales,NSW_N0183,2003,2000
+Saltwater,New South Wales,NSW_N0197,2004,2000
+Kalyarr,New South Wales,NSW_N0198,2005,2000
+Scone Mountain,New South Wales,NSW_N1033,2005,2000
+Woolooma,New South Wales,NSW_N0199,2005,2000
+Curracabundi,New South Wales,NSW_N1097,2006,2000
+Columbey,New South Wales,NSW_N1100,2007,2000
+Gir-um-bit,New South Wales,NSW_N1102,2007,2000
+Gumbaynggirr,New South Wales,NSW_N1124,2007,2000
+Hunter Wetlands,New South Wales,NSW_N1104,2007,2000
+Karuah,New South Wales,NSW_N1101,2007,2000
+Marrangaroo,New South Wales,NSW_N1118,2007,2000
+Tilligerry,New South Wales,NSW_N1107,2007,2000
+Wallaroo,New South Wales,NSW_N1099,2007,2000
+Worimi,New South Wales,NSW_N1111,2007,2000
+Yanga,New South Wales,NSW_N1119,2007,2000
+Yarrahapinni Wetlands,New South Wales,NSW_N1122,2007,2000
+Keverstone,New South Wales,NSW_N1127,2009,2000
+Arakoon,New South Wales,NSW_N1174,2010,2010
+Bendick Murrell,New South Wales,NSW_N1173,2010,2010
+Bungonia,New South Wales,NSW_N1142,2010,2010
+Capertee,New South Wales,NSW_N1146,2010,2010
+Gaagal Wanggaan (South Beach),New South Wales,NSW_N1139,2010,2010
+Goolawah,New South Wales,NSW_N1140,2010,2010
+Jimberoo,New South Wales,NSW_N1161,2010,2010
+Jindalee,New South Wales,NSW_N1162,2010,2010
+Kemendok,New South Wales,NSW_N1132,2010,2010
+Lachlan Valley,New South Wales,NSW_N1135,2010,2010
+Limeburners Creek,New South Wales,NSW_N1154,2010,2010
+Mares Forest,New South Wales,NSW_N1149,2010,2010
+Murray Valley,New South Wales,NSW_N1129,2010,2010
+Murrumbidgee Valley,New South Wales,NSW_N1137,2010,2010
+Sea Acres,New South Wales,NSW_N1155,2010,2010
+Toorale,New South Wales,NSW_N1144,2010,2010
+Berowra Valley,New South Wales,NSW_N1187,2012,2010
+Dharawal,New South Wales,NSW_N1185,2012,2010
+Malabar Headland,New South Wales,NSW_N1188,2012,2010
+Everlasting Swamp,New South Wales,NSW_N1191,2014,2010
+Khappinghat,New South Wales,NSW_N1193,2016,2010
+Ben Halls Gap,New South Wales,NSW_N1197,2019,2010
+Guula Ngurra,New South Wales,NSW_N1200,2020,2020
+Mount Grenfell,New South Wales,NSW_N1202,2020,2020
+Narriearra Caryapundy Swamp,New South Wales,NSW_N1205,2020,2020
+Koonaburra,New South Wales,NSW_N1207,2021,2020
+Brindingabba,New South Wales,NSW_N1209,2022,2020
+Yiraaldiya,New South Wales,NSW_N1210,2023,2020
+Garig Gunak Barlu,Northern Territory,NT_PA68,1961,1960
+Nitmiluk,Northern Territory,NT_PA88,1962,1960
+Tjoritja / West MacDonnell,Northern Territory,NT_PA97,1965,1960
+Finke Gorge,Northern Territory,NT_PA59,1966,1960
+Mary River,Northern Territory,NT_PA118,1966,1960
+Elsey,Northern Territory,NT_PA90,1967,1960
+Djukbinj,Northern Territory,NT_PA116,1975,1970
+Keep River,Northern Territory,NT_PA93,1981,1980
+Watarrka,Northern Territory,NT_PA96,1989,1980
+Judbarra / Gregory,Northern Territory,NT_PA92,1990,1990
+Dulcie Range,Northern Territory,NT_PA40,1991,1990
+Litchfield,Northern Territory,NT_PA85,1991,1990
+Barranyi (North Island),Northern Territory,NT_PA91,1992,1990
+Iytwelepenty / Davenport Ranges,Northern Territory,NT_PA37,1993,1990
+Charles Darwin,Northern Territory,NT_PA115,1998,1990
+Limmen,Northern Territory,NT_PA131,2012,2010
+Barron Gorge,Queensland,QLD_0118BRG001,1900,1900
+Bunya Mountains,Queensland,QLD_0002BUN001,1908,1900
+Main Range,Queensland,QLD_0006MRA001,1908,1900
+Tamborine,Queensland,QLD_0001TAM001,1908,1900
+Millstream Falls,Queensland,QLD_0003MIL001,1909,1900
+Fairlies Knob,Queensland,QLD_0004FKN001,1910,1910
+Lamington,Queensland,QLD_0007LAM001,1915,1910
+Eudlo Creek,Queensland,QLD_0014EUD001,1918,1910
+Wooroonooran,Queensland,QLD_0010WOO001,1921,1920
+Coalstoun Lakes,Queensland,QLD_0015COA001,1929,1920
+Mount Pinbarren,Queensland,QLD_0013MPI001,1929,1920
+D'Aguilar,Queensland,QLD_0073DAG001,1930,1930
+Noosa,Queensland,QLD_0106NSA001,1930,1930
+Carnarvon,Queensland,QLD_0019CAR001,1932,1930
+Girraween,Queensland,QLD_0018GIR001,1932,1930
+Crater Lakes,Queensland,QLD_0021CRL001,1934,1930
+Gloucester Island,Queensland,QLD_0091GLU001,1934,1930
+Barnard Island Group,Queensland,QLD_0034BND001,1936,1930
+Brampton Islands,Queensland,QLD_0218BRA001,1936,1930
+Brook Islands,Queensland,QLD_0031BRK001,1936,1930
+Conway,Queensland,QLD_0044COY001,1936,1930
+Eungella,Queensland,QLD_0024EUN001,1936,1930
+Family Islands,Queensland,QLD_0025FAM001,1936,1930
+Frankland Group,Queensland,QLD_0039FRK001,1936,1930
+Goold Island,Queensland,QLD_0036GOO001,1936,1930
+Lindeman Islands,Queensland,QLD_0733LMN001,1936,1930
+Smith Islands,Queensland,QLD_0028SMT001,1936,1930
+Green Island,Queensland,QLD_0060GRI001,1937,1930
+Northumberland Islands,Queensland,QLD_0061NTB001,1937,1930
+Mount Barney,Queensland,QLD_0154BNY001,1938,1930
+Newry Islands,Queensland,QLD_0074NWY001,1938,1930
+Percy Isles,Queensland,QLD_0075PER001,1938,1930
+South Cumberland Islands,Queensland,QLD_0082SCU001,1938,1930
+West Hill,Queensland,QLD_0076WEH001,1938,1930
+Daintree,Queensland,QLD_0116DNT001,1939,1930
+Mount Hypipamee,Queensland,QLD_0108HYP001,1939,1930
+Turtle Group,Queensland,QLD_0111TUR001,1939,1930
+Chillagoe-Mungana Caves,Queensland,QLD_0119CHM001,1940,1940
+Keppel Bay Islands,Queensland,QLD_0105KEP001,1940,1940
+Whitsunday Islands,Queensland,QLD_0058WHS001,1944,1940
+Burleigh Head,Queensland,QLD_0151BUR001,1947,1940
+Ferntree Creek,Queensland,QLD_0153FTE001,1947,1940
+The Palms,Queensland,QLD_0161PAS001,1950,1950
+Ella Bay,Queensland,QLD_0166ELA001,1952,1950
+Mount Aberdeen,Queensland,QLD_0164MAD001,1952,1950
+Moogerah Peaks,Queensland,QLD_0156MPK001,1953,1950
+Yungaburra,Queensland,QLD_0168YUN001,1953,1950
+Glass House Mountains,Queensland,QLD_0173GLH001,1954,1950
+Ravensbourne,Queensland,QLD_0011RAV001,1958,1950
+Burrum Coast,Queensland,QLD_0275BRC001,1960,1960
+Capricornia Cays,Queensland,QLD_0146CAP001,1960,1960
+Mooloolah River,Queensland,QLD_0181MOO001,1960,1960
+Springbrook,Queensland,QLD_0059SPR001,1960,1960
+Kondalilla,Queensland,QLD_0150KDL001,1963,1960
+Tully Gorge,Queensland,QLD_0012TUL001,1963,1960
+Auburn River,Queensland,QLD_0202AUB001,1964,1960
+Bowling Green Bay,Queensland,QLD_0142BGB001,1965,1960
+Girringun,Queensland,QLD_0193LHZ001,1965,1960
+Kirrama,Queensland,QLD_0916KNT001,1965,1960
+Gheebulum Kunungai (Moreton Island),Queensland,QLD_0208MTI001,1966,1960
+Black Mountain,Queensland,QLD_0215BKM001,1967,1960
+Crows Nest,Queensland,QLD_0210CRW001,1967,1960
+Munga-Thirri,Queensland,QLD_1083MGT001,1967,1960
+Cape Hillsborough,Queensland,QLD_0160CHB001,1968,1960
+Eubenangee Swamp,Queensland,QLD_0221EUB001,1968,1960
+Great Sandy,Queensland,QLD_0182GSY001,1968,1960
+Hull River,Queensland,QLD_0220HUL001,1968,1960
+Paluma Range,Queensland,QLD_0165PLU001,1968,1960
+Cape Upstart,Queensland,QLD_0224CUS001,1969,1960
+Russell River,Queensland,QLD_0228RUS001,1969,1960
+Forty Mile Scrub,Queensland,QLD_0230FMS001,1970,1970
+Mount Cook,Queensland,QLD_0234MCK001,1970,1970
+Porcupine Gorge,Queensland,QLD_0233POR001,1970,1970
+Davies Creek,Queensland,QLD_0235DAV001,1971,1970
+Grey Peaks,Queensland,QLD_0239GRP001,1971,1970
+Southwood,Queensland,QLD_0229SOU001,1971,1970
+Mazeppa,Queensland,QLD_0243MAZ001,1972,1970
+Moresby Range,Queensland,QLD_0241MRB001,1972,1970
+Snake Range,Queensland,QLD_0244SNK001,1972,1970
+Alton,Queensland,QLD_0254ALT001,1973,1970
+Capricorn Coast,Queensland,QLD_0147CPC001,1973,1970
+Freshwater,Queensland,QLD_0247FRW001,1973,1970
+Girramay,Queensland,QLD_0980GRY001,1973,1970
+Mapleton,Queensland,QLD_1067MPX001,1973,1970
+Mapleton Falls,Queensland,QLD_0246MPF001,1973,1970
+Sarabah,Queensland,QLD_0248SRH001,1973,1970
+Goneaway,Queensland,QLD_0259GWY001,1974,1970
+Kroombit Tops,Queensland,QLD_0267KRM001,1974,1970
+Mount Etna Caves,Queensland,QLD_0258ETN001,1974,1970
+Pipeclay,Queensland,QLD_0199PCL001,1974,1970
+Castle Tower,Queensland,QLD_0184CAS001,1975,1970
+Endeavour River,Queensland,QLD_0286EDV001,1975,1970
+Halifax Bay Wetlands,Queensland,QLD_0305HLX001,1975,1970
+Michaelmas and Upolu Cays,Queensland,QLD_0294MUC001,1975,1970
+Cape Palmerston,Queensland,QLD_0316CPS001,1976,1970
+Maria Creek,Queensland,QLD_0242MAR001,1976,1970
+Baga,Queensland,QLD_0336JIM001,1977,1970
+Cania Gorge,Queensland,QLD_0344CAN001,1977,1970
+Conondale,Queensland,QLD_0332CON001,1977,1970
+Eurimbula,Queensland,QLD_0320BSH001,1977,1970
+Gulngay,Queensland,QLD_4246GUL001,1977,1970
+Jardine River,Queensland,QLD_0340JDR001,1977,1970
+Kurrimine Beach,Queensland,QLD_0335KUR001,1977,1970
+Mount Colosseum,Queensland,QLD_0338COL001,1977,1970
+Possession Island,Queensland,QLD_0329POS001,1977,1970
+Staaten River,Queensland,QLD_0342STA001,1977,1970
+Topaz Road,Queensland,QLD_0327TPZ001,1977,1970
+Clump Mountain,Queensland,QLD_0192CLM001,1978,1970
+Minerva Hills,Queensland,QLD_0360MNV001,1978,1970
+Bendidee,Queensland,QLD_0378BEN001,1979,1970
+Deepwater,Queensland,QLD_0373DPW001,1979,1970
+Mount Chinghee,Queensland,QLD_0303MCG001,1979,1970
+St Helena Island,Queensland,QLD_0375SHI001,1979,1970
+Blackdown Tableland,Queensland,QLD_0380BLD001,1980,1980
+Broad Sound Islands,Queensland,QLD_0385BSI001,1980,1980
+Hasties Swamp,Queensland,QLD_0387HST001,1980,1980
+Littabella,Queensland,QLD_0401LIT001,1980,1980
+Pioneer Peaks,Queensland,QLD_0158PPK001,1980,1980
+Reliance Creek,Queensland,QLD_0389REL001,1980,1980
+Naree Budjong Djara,Queensland,QLD_1064NBG001,1981,1980
+Palmerston Rocks,Queensland,QLD_0217PLT001,1981,1980
+Sundown,Queensland,QLD_0319SUN001,1981,1980
+Holbourne Island,Queensland,QLD_0418HLB001,1982,1980
+Isla Gorge,Queensland,QLD_0201ISL001,1983,1980
+Peak Range,Queensland,QLD_0439PKR001,1983,1980
+Bladensburg,Queensland,QLD_0454BLB001,1984,1980
+Boodjamulla (Lawn Hill),Queensland,QLD_0458LWN001,1984,1980
+Magnetic Island,Queensland,QLD_0172MAG001,1984,1980
+Orpheus Island,Queensland,QLD_0180ORP001,1984,1980
+Nicoll Scrub,Queensland,QLD_0489NCS001,1986,1980
+Expedition (Limited Depth),Queensland,QLD_0169EXP001,1987,1980
+Great Basalt Wall,Queensland,QLD_0501GBW001,1987,1980
+Lizard Island,Queensland,QLD_0117LZI001,1987,1980
+Southern Moreton Bay Islands,Queensland,QLD_0503SMO001,1987,1980
+Bribie Island,Queensland,QLD_0532BBI001,1988,1980
+Wiliyan-ngurru,Queensland,QLD_0511CAM001,1988,1980
+Byfield,Queensland,QLD_0534BYF001,1989,1980
+Claremont Isles,Queensland,QLD_0551CLT001,1989,1980
+Dryander,Queensland,QLD_0240DRY001,1989,1980
+Fitzroy Island,Queensland,QLD_0566FZI001,1989,1980
+Hann Tableland,Queensland,QLD_0553HNN001,1989,1980
+Hinchinbrook Island,Queensland,QLD_0020HIN001,1989,1980
+Mount O'Connell,Queensland,QLD_0565MCN001,1989,1980
+Ngalba Bulal,Queensland,QLD_1081NBA001,1989,1980
+Precipice,Queensland,QLD_0570PRE001,1989,1980
+Sandbanks,Queensland,QLD_0550SAN001,1989,1980
+Undara Volcanic,Queensland,QLD_0561UDV001,1989,1980
+Dalrymple,Queensland,QLD_0585DAL001,1990,1990
+Erringibba,Queensland,QLD_0588ERR001,1990,1990
+Fort Lytton,Queensland,QLD_0576FLY001,1990,1990
+Idalia,Queensland,QLD_0597IDL001,1990,1990
+Mount Coolum,Queensland,QLD_0596MCL001,1990,1990
+Mount Walsh,Queensland,QLD_0152WSH001,1990,1990
+Rundle Range,Queensland,QLD_0584RUN001,1990,1990
+Thrushton,Queensland,QLD_0598THR001,1990,1990
+White Mountains,Queensland,QLD_0582WHM001,1990,1990
+Blackwood,Queensland,QLD_0609BWD001,1991,1990
+Currawinya,Queensland,QLD_0607CWY001,1991,1990
+Forest Den,Queensland,QLD_0618FRD001,1991,1990
+Lake Bindegolly,Queensland,QLD_0620BGL001,1991,1990
+Mount Archer,Queensland,QLD_0499ARC001,1991,1990
+Narrien Range,Queensland,QLD_0615NAR001,1991,1990
+Nuga Nuga,Queensland,QLD_0604NUG001,1991,1990
+Poona,Queensland,QLD_0504POO001,1991,1990
+Bulleringa,Queensland,QLD_0634BLG001,1992,1990
+Chesterton Range,Queensland,QLD_0630CHT001,1992,1990
+Curtis Island,Queensland,QLD_0624CUR001,1992,1990
+Hell Hole Gorge,Queensland,QLD_0638HHG001,1992,1990
+Japoon,Queensland,QLD_0637JAP001,1992,1990
+Mariala,Queensland,QLD_0414MRL001,1992,1990
+Wild Cattle Island,Queensland,QLD_0541WCA001,1992,1990
+Wondul Range,Queensland,QLD_0650WDL001,1992,1990
+Diamantina,Queensland,QLD_0663DMT001,1993,1990
+Moorrinya,Queensland,QLD_0658MRY001,1993,1990
+Venman Bushland,Queensland,QLD_0581VNB001,1993,1990
+Welford,Queensland,QLD_0659WEL001,1993,1990
+Culgoa Floodplain,Queensland,QLD_0684CGP001,1994,1990
+Goodedulla,Queensland,QLD_0679GDL001,1994,1990
+Lochern,Queensland,QLD_0680LCH001,1994,1990
+Molle Islands,Queensland,QLD_0102MOL001,1994,1990
+Mount Martin,Queensland,QLD_0690MMT001,1994,1990
+Mount Ossa,Queensland,QLD_0689MOS001,1994,1990
+Repulse Islands,Queensland,QLD_0101REP001,1994,1990
+Triunia,Queensland,QLD_0686TRU001,1994,1990
+Homevale,Queensland,QLD_0712HMV001,1995,1990
+Swain Reefs,Queensland,QLD_0509SWA001,1995,1990
+Tarong,Queensland,QLD_0728TAR001,1995,1990
+Tregole,Queensland,QLD_0757TRG001,1995,1990
+Astrebla Downs,Queensland,QLD_0749ASD001,1996,1990
+Blackbraes,Queensland,QLD_0791BKB001,1998,1990
+Cudmore (Limited Depth),Queensland,QLD_0814CUD001,1998,1990
+Good Night Scrub,Queensland,QLD_0740GDN001,1998,1990
+Mowbray,Queensland,QLD_0799MOW001,1998,1990
+Yuwi Paree Toolkoon,Queensland,QLD_1062YUW001,1998,1990
+Ban Ban,Queensland,QLD_0934BNP001,2000,2000
+Bania,Queensland,QLD_0991BAO001,2000,2000
+Bellthorpe,Queensland,QLD_1042BPE001,2000,2000
+Benarkin,Queensland,QLD_0935BNL001,2000,2000
+Beninbi,Queensland,QLD_0948BII001,2000,2000
+Bulburin,Queensland,QLD_0965BBK001,2000,2000
+Cordalba,Queensland,QLD_0987CDN001,2000,2000
+Dawes,Queensland,QLD_0941DAS001,2000,2000
+Dularcha,Queensland,QLD_0009DUL001,2000,2000
+Esk,Queensland,QLD_0952EPK001,2000,2000
+Gatton,Queensland,QLD_0954GTN001,2000,2000
+Geham,Queensland,QLD_0955GNP001,2000,2000
+Glenbar,Queensland,QLD_0956GBR001,2000,2000
+Grongah,Queensland,QLD_0982GNG001,2000,2000
+Junee,Queensland,QLD_0890JNE001,2000,2000
+Lockyer,Queensland,QLD_1000LKY001,2000,2000
+Maleny,Queensland,QLD_0960MNL001,2000,2000
+Mudlo,Queensland,QLD_0983MUD001,2000,2000
+Nangur,Queensland,QLD_0942NGR001,2000,2000
+Pidna,Queensland,QLD_0962PNP001,2000,2000
+Three Islands Group,Queensland,QLD_0113TIG001,2000,2000
+Tuchekoi,Queensland,QLD_1030THK001,2000,2000
+Wietalaba,Queensland,QLD_0943WTL001,2000,2000
+Woocoo,Queensland,QLD_0944WCP001,2000,2000
+Woowoonga,Queensland,QLD_0945WWN001,2000,2000
+Amamoor,Queensland,QLD_0947AMM001,2001,2000
+Bingera,Queensland,QLD_0936BGP001,2001,2000
+Cherbourg,Queensland,QLD_0938CRG001,2001,2000
+Curtain Fig,Queensland,QLD_0911CFI001,2001,2000
+Dan Dan,Queensland,QLD_0967DAT001,2001,2000
+Deer Reserve,Queensland,QLD_0951DRS001,2001,2000
+Dinden,Queensland,QLD_0914DND001,2001,2000
+Djiru,Queensland,QLD_1038DJI001,2001,2000
+Glastonbury,Queensland,QLD_0975GST001,2001,2000
+Goomboorian,Queensland,QLD_0993GBO001,2001,2000
+Gympie,Queensland,QLD_0957GME001,2001,2000
+Koombooloomba,Queensland,QLD_1057KON001,2001,2000
+Little Mulgrave,Queensland,QLD_1060LML001,2001,2000
+Maalan,Queensland,QLD_0920MNP001,2001,2000
+Mount Binga,Queensland,QLD_0977MBG001,2001,2000
+Mount Lewis,Queensland,QLD_1036MWP001,2001,2000
+Mount Mackay,Queensland,QLD_0908MMK001,2001,2000
+Mount Spurgeon,Queensland,QLD_0995SPU001,2001,2000
+Mount Windsor,Queensland,QLD_0921MNK001,2001,2000
+Oakview,Queensland,QLD_1016OKN001,2001,2000
+Wongi,Queensland,QLD_0976WGI001,2001,2000
+Woondum,Queensland,QLD_1032WDM001,2001,2000
+Wrattens,Queensland,QLD_1012RTN001,2001,2000
+Danbulla,Queensland,QLD_0912DNP001,2003,2000
+Finucane Island,Queensland,QLD_0900FIN001,2003,2000
+Gadgarra,Queensland,QLD_1059GGR001,2003,2000
+Herberton Range,Queensland,QLD_1003HRP001,2003,2000
+Kinrara,Queensland,QLD_0903KRN001,2003,2000
+Kuranda,Queensland,QLD_0918KUP001,2003,2000
+Nairana,Queensland,QLD_0904NRN001,2003,2000
+Nour Nour,Queensland,QLD_0988NON001,2005,2000
+Tully Falls,Queensland,QLD_0930TFN001,2005,2000
+Annan River (Yuku Baja-Muliku),Queensland,QLD_0971AYP001,2006,2000
+Hampton,Queensland,QLD_0958HPN001,2006,2000
+Warro,Queensland,QLD_0969WOP001,2006,2000
+Woroon,Queensland,QLD_0946WNP001,2006,2000
+Teerk Roo Ra,Queensland,QLD_0985TRK001,2007,2000
+Albinia,Queensland,QLD_1006ALN001,2008,2000
+Bluff Hill,Queensland,QLD_1009BFN001,2008,2000
+Beeron,Queensland,QLD_1034BEK001,2009,2000
+Binya,Queensland,QLD_1010BYP001,2009,2000
+Humboldt,Queensland,QLD_1029HBT001,2009,2000
+Kelvin,Queensland,QLD_1011KVN001,2009,2000
+Nerang,Queensland,QLD_1024NNP001,2009,2000
+Wickham,Queensland,QLD_1031WKH001,2009,2000
+Basilisk Range,Queensland,QLD_1056BSR001,2010,2010
+Macalister Range,Queensland,QLD_1048MCI001,2010,2010
+Narkoola,Queensland,QLD_1044NAK001,2010,2010
+Pumicestone,Queensland,QLD_1049PMI001,2010,2010
+Tewantin,Queensland,QLD_1050TWN001,2010,2010
+Tumoulin,Queensland,QLD_4199TML001,2010,2010
+Pinnacles,Queensland,QLD_1065PNL001,2011,2010
+Expedition,Queensland,QLD_4227ENQ001,2015,2010
+Rungulla,Queensland,QLD_4233RUE001,2015,2010
+Malbon Thompson Range,Queensland,QLD_0041MBK001,2024,2020
+Tagalaka,Queensland,QLD_4232LIU001,2024,2020
+The Lakes,Queensland,QLD_0042TAC001,2024,2020
+Flinders Chase,South Australia,SA_0225,1919,1910
+Lincoln,South Australia,SA_0222,1941,1940
+Ikara-Flinders Ranges,South Australia,SA_0012,1944,1940
+Mount Remarkable,South Australia,SA_0002,1950,1950
+Canunda,South Australia,SA_0019,1959,1950
+Coorong,South Australia,SA_0014,1966,1960
+Naracoorte Caves,South Australia,SA_0097,1972,1970
+Nullarbor,South Australia,SA_0005,1979,1970
+Coffin Bay,South Australia,SA_0226,1982,1980
+Kati Thanda-Lake Eyre,South Australia,SA_0227,1985,1980
+Witjira,South Australia,SA_0228,1985,1980
+Malkumba-Coongie Lakes,South Australia,SA_0757,1988,1980
+Lake Gairdner,South Australia,SA_0004,1991,1990
+Lake Torrens,South Australia,SA_0003,1991,1990
+Belair,South Australia,SA_0248,1992,1990
+Onkaparinga River,South Australia,SA_0318,1993,1990
+Gawler Ranges,South Australia,SA_0524,2002,2000
+Adelaide International Bird Sanctuary -Winaityinaityi Pangkara,South Australia,SA_1233_1,2016,2010
+Glenthorne -Ityamaiitpinna Yarta,South Australia,SA_1254_1,2020,2020
+Cleland,South Australia,SA_0013,2021,2020
+Deep Creek,South Australia,SA_0001,2021,2020
+Hindmarsh Valley,South Australia,SA_1285_1,2021,2020
+Lake Frome,South Australia,SA_0250,2021,2020
+Munga-Thirri—Simpson Desert,South Australia,SA_1281_1,2021,2020
+Nilpena Ediacara,South Australia,SA_1267_1,2021,2020
+Wapma Thura-Southern Flinders Ranges,South Australia,SA_1284_1,2021,2020
+Franklin-Gordon Wild Rivers,Tasmania,TAS_50240,1908,1900
+Freycinet,Tasmania,TAS_50241,1916,1910
+Mount Field,Tasmania,TAS_50246,1916,1910
+Tasman,Tasmania,TAS_50254,1917,1910
+South Bruny,Tasmania,TAS_50251,1919,1910
+Cradle Mountain-Lake St Clair,Tasmania,TAS_50238,1922,1920
+Hartz Mountains,Tasmania,TAS_50242,1939,1930
+Mole Creek Karst,Tasmania,TAS_50245,1939,1930
+Ben Lomond,Tasmania,TAS_50237,1947,1940
+Southwest,Tasmania,TAS_50252,1951,1950
+Rocky Cape,Tasmania,TAS_50249,1967,1960
+Strzelecki,Tasmania,TAS_50253,1967,1960
+Maria Island,Tasmania,TAS_50244,1971,1970
+Mount William,Tasmania,TAS_50247,1973,1970
+Narawntapu,Tasmania,TAS_50248,1976,1970
+Walls of Jerusalem,Tasmania,TAS_50255,1978,1970
+Douglas-Apsley,Tasmania,TAS_50239,1989,1980
+Savage River,Tasmania,TAS_50250,1999,1990
+Dandenong Ranges,Victoria,VIC_3291,1882,1880
+Mount Buffalo,Victoria,VIC_3303,1898,1890
+Wilsons Promontory,Victoria,VIC_3308,1898,1890
+Wyperfeld,Victoria,VIC_3309,1909,1900
+Lower Glenelg,Victoria,VIC_3300,1924,1920
+Kinglake,Victoria,VIC_3292,1928,1920
+Churchill,Victoria,VIC_3293,1941,1940
+Alfred,Victoria,VIC_3287,1956,1950
+Croajingolong,Victoria,VIC_3311,1956,1950
+Lind,Victoria,VIC_3299,1956,1950
+Tarra-Bulga,Victoria,VIC_3289,1956,1950
+The Lakes,Victoria,VIC_3297,1956,1950
+Lake Eildon,Victoria,VIC_3294,1957,1950
+Budj Bim,Victoria,VIC_3304,1960,1960
+Hattah - Kulkyne,Victoria,VIC_3296,1960,1960
+Mount Richmond,Victoria,VIC_3305,1960,1960
+Mitchell River,Victoria,VIC_3295,1962,1960
+Port Campbell,Victoria,VIC_3307,1964,1960
+Morwell,Victoria,VIC_3302,1966,1960
+Little Desert,Victoria,VIC_3298,1968,1960
+Organ Pipes,Victoria,VIC_3306,1971,1970
+Brisbane Ranges,Victoria,VIC_3288,1975,1970
+Mornington Peninsula,Victoria,VIC_3290,1975,1970
+Burrowa - Pine Mountain,Victoria,VIC_3310,1978,1970
+Alpine,Victoria,VIC_3319,1979,1970
+Baw Baw,Victoria,VIC_3312,1979,1970
+Coopracambra,Victoria,VIC_3317,1979,1970
+Murray - Sunset,Victoria,VIC_3320,1979,1970
+Snowy River,Victoria,VIC_3313,1979,1970
+Chiltern-Mt Pilot,Victoria,VIC_3314,1980,1980
+Grampians,Victoria,VIC_3316,1984,1980
+Greater Bendigo,Victoria,VIC_4492,1986,1980
+Kara Kara,Victoria,VIC_3336,1986,1980
+Errinundra,Victoria,VIC_3318,1988,1980
+French Island,Victoria,VIC_3301,1988,1980
+Terrick Terrick,Victoria,VIC_3349,1988,1980
+Yarra Ranges,Victoria,VIC_3321,1995,1990
+Heathcote-Graytown,Victoria,VIC_4493,2002,2000
+Great Otway,Victoria,VIC_4710,2005,2000
+Point Nepean,Victoria,VIC_4711,2005,2000
+Cobboboonee,Victoria,VIC_4862,2008,2000
+Barmah,Victoria,VIC_4882,2010,2010
+Gunbower,Victoria,VIC_4884,2010,2010
+Lower Goulburn,Victoria,VIC_4885,2010,2010
+Warby-Ovens,Victoria,VIC_4886,2010,2010
+Millstream Chichester,Western Australia,WA_30071,1818,1810
+Walyunga,Western Australia,WA_02065,1893,1890
+Torndirrup,Western Australia,WA_05225,1898,1890
+John Forrest,Western Australia,WA_07537,1900,1900
+Warren,Western Australia,WA_07691,1901,1900
+William Bay,Western Australia,WA_12046,1909,1900
+Walpole-Nornalup,Western Australia,WA_13045,1910,1910
+Leeuwin-Naturaliste,Western Australia,WA_08428,1913,1910
+Stirling Range,Western Australia,WA_01090,1913,1910
+Unnamed WA17519,Western Australia,WA_17519,1920,1920
+Sir James Mitchell,Western Australia,WA_18705,1924,1920
+Porongurup,Western Australia,WA_18987,1925,1920
+Brockman,Western Australia,WA_19424,1927,1920
+Kalamunda,Western Australia,WA_21314,1934,1930
+Yanchep,Western Australia,WA_09868,1935,1930
+Lesmurdie Falls,Western Australia,WA_22515,1946,1940
+Cape Le Grand,Western Australia,WA_22795,1948,1940
+Cape Arid,Western Australia,WA_24047,1954,1950
+Watheroo,Western Australia,WA_24229,1955,1950
+Nambung,Western Australia,WA_24522,1956,1950
+Greenmount,Western Australia,WA_25313,1959,1950
+Scott,Western Australia,WA_25373,1959,1950
+Waychinicup,Western Australia,WA_25865,1961,1960
+West Cape Howe,Western Australia,WA_26177,1962,1960
+Dimalurru,Western Australia,WA_26890,1963,1960
+Frank Hann,Western Australia,WA_27023,1963,1960
+Hassell,Western Australia,WA_26650,1963,1960
+Kalbarri,Western Australia,WA_27004,1963,1960
+Cape Range,Western Australia,WA_27288,1964,1960
+Gull Rock,Western Australia,WA_27107,1964,1960
+Prince Regent,Western Australia,WA_27164,1964,1960
+Neerabup,Western Australia,WA_27575,1965,1960
+Danggu,Western Australia,WA_28401,1967,1960
+Moore River,Western Australia,WA_28462,1967,1960
+Serpentine,Western Australia,WA_28862,1968,1960
+Wolfe Creek Meteorite Crater,Western Australia,WA_29457,1968,1960
+Yalgorup,Western Australia,WA_11710,1968,1960
+Alexander Morrison,Western Australia,WA_29800,1969,1960
+Tathra,Western Australia,WA_29802,1969,1960
+Avon Valley,Western Australia,WA_30192,1970,1970
+Walyunga,Western Australia,WA_2065,1970,1970
+Bandilngan  (Windjana Gorge),Western Australia,WA_31107,1971,1970
+Drovers Cave,Western Australia,WA_31302,1972,1970
+Badgingarra,Western Australia,WA_31809,1973,1970
+Fitzgerald River,Western Australia,WA_31737,1973,1970
+Drysdale River,Western Australia,WA_32853,1974,1970
+Stokes,Western Australia,WA_32590,1974,1970
+Boorabbin,Western Australia,WA_35004,1977,1970
+Karlamilyi,Western Australia,WA_34607,1977,1970
+Collier Range,Western Australia,WA_35104,1978,1970
+Goongarrie,Western Australia,WA_35637,1978,1970
+Eucla,Western Australia,WA_36205,1979,1970
+Peak Charles,Western Australia,WA_36004,1979,1970
+D'Entrecasteaux,Western Australia,WA_36996,1980,1980
+Mirima,Western Australia,WA_37883,1982,1980
+Purnululu,Western Australia,WA_39897,1987,1980
+Tuart Forest,Western Australia,WA_40250,1987,1980
+Mount Frankland,Western Australia,WA_40837,1988,1980
+Shannon,Western Australia,WA_40836,1988,1980
+Mount Augustus,Western Australia,WA_41051,1989,1980
+Lesueur,Western Australia,WA_42032,1992,1990
+Francois Peron,Western Australia,WA_42471,1993,1990
+Gloucester,Western Australia,WA_42473,1993,1990
+Kennedy Range,Western Australia,WA_42474,1993,1990
+Goldfields Woodlands,Western Australia,WA_46126,2000,2000
+Lawley River,Western Australia,WA_46233,2000,2000
+Mitchell River,Western Australia,WA_46232,2000,2000
+Unnamed WA46400,Western Australia,WA_46400,2000,2000
+Wellington,Western Australia,WA_46213,2000,2000
+Beelu,Western Australia,WA_47880,2004,2000
+Blackwood River,Western Australia,WA_47670,2004,2000
+Boorara-Gardner,Western Australia,WA_47665,2004,2000
+Boyndaminup,Western Australia,WA_47671,2004,2000
+Bramley,Western Australia,WA_47956,2004,2000
+Dalgarup,Western Australia,WA_47885,2004,2000
+Easter,Western Australia,WA_47877,2004,2000
+Forest Grove,Western Australia,WA_47673,2004,2000
+Greater Beedelup,Western Australia,WA_47664,2004,2000
+Greater Dordagup,Western Australia,WA_47663,2004,2000
+Greater Hawke,Western Australia,WA_47878,2004,2000
+Greater Kingston,Western Australia,WA_47662,2004,2000
+Greater Preston,Western Australia,WA_47661,2004,2000
+Helena,Western Australia,WA_47882,2004,2000
+Helena and Aurora Ranges,Western Australia,WA_36208,2004,2000
+Hilliger,Western Australia,WA_47668,2004,2000
+Jane,Western Australia,WA_47666,2004,2000
+Korung,Western Australia,WA_47881,2004,2000
+Lake Muir,Western Australia,WA_47886,2004,2000
+Midgegooroo,Western Australia,WA_47884,2004,2000
+Milyeannup,Western Australia,WA_47669,2004,2000
+Mount Frankland North,Western Australia,WA_47888,2004,2000
+Mount Frankland South,Western Australia,WA_47889,2004,2000
+Mount Lindesay,Western Australia,WA_47891,2004,2000
+Mount Roe,Western Australia,WA_47890,2004,2000
+Unnamed WA47688,Western Australia,WA_47688,2004,2000
+Wandoo,Western Australia,WA_47883,2004,2000
+Whicher,Western Australia,WA_47887,2004,2000
+Wiltshire-Butler,Western Australia,WA_47667,2004,2000
+Yelverton,Western Australia,WA_47672,2004,2000
+Dirk Hartog Island,Western Australia,WA_50325,2009,2000
+Murujuga,Western Australia,WA_2803,2013,2010
+Houtman Abrolhos Islands,Western Australia,WA_53379,2019,2010
+Niiwalarra Islands,Western Australia,WA_53387,2019,2010
+Cape Range (South),Western Australia,WA_53770,2020,2020
+Lakeside,Western Australia,WA_53839,2021,2020
+Unnamed WA53843,Western Australia,WA_53843,2021,2020
+Warlibirri,Western Australia,WA_53913,2021,2020
+Dryandra,Western Australia,WA_53976,2022,2020
+Mungada Ridge,Western Australia,WA_53978,2022,2020
+Bunuba,Western Australia,WA_54262,2023,2020
+Matuwa Kurrara Kurrara,Western Australia,WA_54224,2023,2020
+Pimbee,Western Australia,WA_54303,2023,2020
+Burringurrah,Western Australia,WA_54417,2024,2020
+Dalgaranga,Western Australia,WA_54419,2024,2020
+Fitzroy River,Western Australia,WA_54498,2024,2020
+Jilgu,Western Australia,WA_54397,2024,2020
+Muggon,Western Australia,WA_54418,2024,2020

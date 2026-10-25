@@ -1,0 +1,723 @@
+park,state,state_code,area_ha
+Munga-Thirri—Simpson Desert,South Australia,SA,3605436.06
+Kakadu,Northern Territory,NT,1911121.92
+Kati Thanda-Lake Eyre,South Australia,SA,1350741.32
+Judbarra / Gregory,Northern Territory,NT,1300573.81
+Karlamilyi,Western Australia,WA,1283729.17
+Munga-Thirri,Queensland,QLD,1014431.67
+Limmen,Northern Territory,NT,958118.23
+Witjira,South Australia,SA,768161.19
+Kosciuszko,New South Wales,NSW,688944.64
+Murray - Sunset,Victoria,VIC,665846.82
+Alpine,Victoria,VIC,662436.51
+Southwest,Tasmania,TAS,641742.58
+Karijini,Western Australia,WA,624428.0
+Matuwa Kurrara Kurrara,Western Australia,WA,609321.05
+Prince Regent,Western Australia,WA,584817.35
+Lake Torrens,South Australia,SA,568759.17
+Lake Gairdner,South Australia,SA,556894.25
+Diamantina,Queensland,QLD,511216.17
+Wollemi,New South Wales,NSW,505561.85
+Burringurrah,Western Australia,WA,482603.13
+Staaten River,Queensland,QLD,468791.09
+Franklin-Gordon Wild Rivers,Tasmania,TAS,463565.89
+Drysdale River,Western Australia,WA,447673.31
+Wyperfeld,Victoria,VIC,359855.2
+Sturt,New South Wales,NSW,345565.7
+Currawinya,Queensland,QLD,343867.49
+Kennedy Range,Western Australia,WA,316825.42
+Carnarvon,Queensland,QLD,301340.24
+Girringun,Queensland,QLD,300459.54
+Fitzgerald River,Western Australia,WA,295706.2
+Nitmiluk,Northern Territory,NT,294661.86
+Cape Arid,Western Australia,WA,277672.62
+Blue Mountains,New South Wales,NSW,269339.4
+Lake Frome,South Australia,SA,259361.46
+Tjoritja / West MacDonnell,Northern Territory,NT,256684.75
+Purnululu,Western Australia,WA,243830.88
+Millstream Chichester,Western Australia,WA,238343.79
+Collier Range,Western Australia,WA,235222.8
+Garig Gunak Barlu,Northern Territory,NT,226004.23
+Great Sandy,Queensland,QLD,224467.37
+Boodjamulla (Lawn Hill),Queensland,QLD,203161.68
+Morton,New South Wales,NSW,199584.06
+Muggon,Western Australia,WA,191689.05
+Paroo-Darling,New South Wales,NSW,183176.47
+Kalbarri,Western Australia,WA,183162.19
+Gawler Ranges,South Australia,SA,179478.94
+Astrebla Downs,Queensland,QLD,170508.63
+Grampians,Victoria,VIC,168276.84
+Yengo,New South Wales,NSW,168008.11
+Cradle Mountain-Lake St Clair,Tasmania,TAS,161676.38
+Bunuba,Western Australia,WA,160245.65
+Narriearra Caryapundy Swamp,New South Wales,NSW,153740.92
+Oxley Wild Rivers,New South Wales,NSW,153674.76
+Helena and Aurora Ranges,Western Australia,WA,149157.19
+Litchfield,Northern Territory,NT,145845.1
+Idalia,Queensland,QLD,141130.72
+Dalgaranga,Western Australia,WA,135681.66
+Uluru-Kata Tjuta,Northern Territory,NT,133301.74
+Little Desert,Victoria,VIC,131606.65
+Mungo,New South Wales,NSW,129912.2
+Mount Roe,Western Australia,WA,128048.31
+Iytwelepenty / Davenport Ranges,Northern Territory,NT,127838.44
+Vulkathunha-Gammon Ranges,South Australia,SA,126245.55
+Welford,Queensland,QLD,123542.1
+Mary River,Northern Territory,NT,121524.55
+Deua,New South Wales,NSW,121221.35
+Rungulla,Queensland,QLD,120772.9
+D'Entrecasteaux,Western Australia,WA,119004.25
+Wooroonooran,Queensland,QLD,115259.08
+Mitchell River,Western Australia,WA,115052.08
+Snowy River,Victoria,VIC,114728.74
+Stirling Range,Western Australia,WA,113604.5
+White Mountains,Queensland,QLD,112569.31
+South East Forest,New South Wales,NSW,111345.01
+Great Otway,Victoria,VIC,110265.31
+Expedition (Limited Depth),Queensland,QLD,109135.42
+Guy Fawkes River,New South Wales,NSW,108235.97
+Watarrka,Northern Territory,NT,105189.37
+Jilgu,Western Australia,WA,101976.58
+Ikara-Flinders Ranges,South Australia,SA,95571.7
+Wadbilliga,New South Wales,NSW,95461.02
+Pimbee,Western Australia,WA,93748.07
+Croajingolong,Victoria,VIC,88516.61
+Bladensburg,Queensland,QLD,84253.23
+Paluma Range,Queensland,QLD,80008.93
+Tagalaka,Queensland,QLD,78440.81
+Namadgi,Australian Capital Territory,ACT,77871.96
+Yarra Ranges,Victoria,VIC,77254.2
+Barrington Tops,New South Wales,NSW,76914.99
+Goulburn River,New South Wales,NSW,74517.81
+Kanangra-Boyd,New South Wales,NSW,71804.43
+New England,New South Wales,NSW,71642.93
+Cape Range,Western Australia,WA,69488.37
+Washpool,New South Wales,NSW,68879.44
+Frank Hann,Western Australia,WA,68708.0
+Mutawintji,New South Wales,NSW,67826.89
+Undara Volcanic,Queensland,QLD,66347.55
+Goldfields Woodlands,Western Australia,WA,66145.98
+Nilpena Ediacara,South Australia,SA,64908.81
+Gundabooka,New South Wales,NSW,64025.84
+Dirk Hartog Island,Western Australia,WA,62664.35
+Eungella,Queensland,QLD,62211.31
+Culgoa Floodplain,Queensland,QLD,61784.32
+Tully Gorge,Queensland,QLD,60597.04
+Goongarrie,Western Australia,WA,60008.12
+Mallee Cliffs,New South Wales,NSW,58118.45
+Bowling Green Bay,Queensland,QLD,57427.36
+Keep River,Northern Territory,NT,57225.54
+Djukbinj,Northern Territory,NT,55442.2
+Bulleringa,Queensland,QLD,53784.45
+Francois Peron,Western Australia,WA,53145.11
+Shannon,Western Australia,WA,52622.23
+Walls of Jerusalem,Tasmania,TAS,51807.34
+Homevale,Queensland,QLD,51557.64
+Mount Kaputar,New South Wales,NSW,51303.89
+Blackbraes,Queensland,QLD,51286.85
+Nattai,New South Wales,NSW,50995.15
+Hattah - Kulkyne,Victoria,VIC,49982.59
+Mount Windsor,Queensland,QLD,48941.15
+Coorong,South Australia,SA,48694.84
+Wilsons Promontory,Victoria,VIC,48202.19
+Myall Lakes,New South Wales,NSW,48042.66
+Blackdown Tableland,Queensland,QLD,47826.1
+Wandoo,Western Australia,WA,46367.92
+Koonaburra,New South Wales,NSW,46028.63
+Finke Gorge,Northern Territory,NT,45293.85
+Watheroo,Western Australia,WA,44481.65
+Kinchega,New South Wales,NSW,44474.54
+Kroombit Tops,Queensland,QLD,43216.94
+Errinundra,Victoria,VIC,43144.41
+The Lakes,Queensland,QLD,43141.45
+Goobang,New South Wales,NSW,42437.73
+Mount Frankland South,Western Australia,WA,42298.8
+Culgoa,New South Wales,NSW,41235.67
+Kalyarr,New South Wales,NSW,40779.18
+Nymboida,New South Wales,NSW,40645.79
+Peak Charles,Western Australia,WA,39953.11
+Hinchinbrook Island,Queensland,QLD,39769.44
+Mount Lindesay,Western Australia,WA,39573.3
+Murray Valley,New South Wales,NSW,39521.33
+D'Aguilar,Queensland,QLD,39227.78
+Coopracambra,Victoria,VIC,38513.89
+Yuraygir,New South Wales,NSW,38401.57
+Main Range,Queensland,QLD,38305.04
+Mount Frankland,Western Australia,WA,37121.53
+Conondale,Queensland,QLD,35834.68
+Toorale,New South Wales,NSW,35694.91
+Yanga,New South Wales,NSW,35382.9
+Flinders Chase,South Australia,SA,35346.57
+Great Basalt Wall,Queensland,QLD,35131.0
+Werrikimbe,New South Wales,NSW,35053.87
+Bulburin,Queensland,QLD,34298.51
+Brindingabba,New South Wales,NSW,33942.26
+Bania,Queensland,QLD,32867.11
+Conway,Queensland,QLD,32666.5
+Willi Willi,New South Wales,NSW,32607.14
+Moorrinya,Queensland,QLD,32593.92
+Nullarbor,South Australia,SA,32526.67
+Border Ranges,New South Wales,NSW,31862.68
+Cape Le Grand,Western Australia,WA,31199.28
+Kuranda,Queensland,QLD,31172.26
+Chesterton Range,Queensland,QLD,31005.07
+Coffin Bay,South Australia,SA,30886.17
+Cottan-Bimbang,New South Wales,NSW,30577.46
+Eurimbula,Queensland,QLD,29534.26
+Koombooloomba,Queensland,QLD,29224.76
+Girramay,Queensland,QLD,29022.76
+Mount Lewis,Queensland,QLD,28824.82
+Barmah,Victoria,VIC,28489.78
+Boorabbin,Western Australia,WA,28168.41
+Lake Eildon,Victoria,VIC,27821.73
+Mount Buffalo,Victoria,VIC,27483.79
+Lesueur,Western Australia,WA,27230.84
+Cape Range (South),Western Australia,WA,27082.84
+Mariala,Queensland,QLD,27043.68
+Monga,New South Wales,NSW,26989.48
+Malkumba-Coongie Lakes,South Australia,SA,26616.63
+Lower Glenelg,Victoria,VIC,26451.15
+Goneaway,Queensland,QLD,26082.4
+Burrum Coast,Queensland,QLD,25923.42
+Goodedulla,Queensland,QLD,25763.88
+Thrushton,Queensland,QLD,25661.19
+Gibraltar Range,New South Wales,NSW,25399.55
+Wrattens,Queensland,QLD,24832.32
+Japoon,Queensland,QLD,24819.79
+Wellington,Western Australia,WA,24798.95
+Lochern,Queensland,QLD,24787.42
+Fitzroy River,Western Australia,WA,24542.69
+Woomargama,New South Wales,NSW,24219.38
+Budawang,New South Wales,NSW,23999.99
+Warrumbungle,New South Wales,NSW,23867.85
+Kinglake,Victoria,VIC,23126.92
+Lachlan Valley,New South Wales,NSW,22944.35
+Grongah,Queensland,QLD,22905.04
+Expedition,Queensland,QLD,22554.02
+Mount Field,Tasmania,TAS,22531.33
+Oolambeyan,New South Wales,NSW,22199.89
+Mount Frankland North,Western Australia,WA,22069.46
+Bundjalung,New South Wales,NSW,21963.68
+Chiltern-Mt Pilot,Victoria,VIC,21664.62
+Leeuwin-Naturaliste,Western Australia,WA,21598.91
+Lincoln,South Australia,SA,21437.32
+Lamington,Queensland,QLD,21377.39
+Brindabella,New South Wales,NSW,21288.04
+Cudmore (Limited Depth),Queensland,QLD,21217.81
+Greater Kingston,Western Australia,WA,21113.55
+Dinden,Queensland,QLD,21073.13
+Blackwood River,Western Australia,WA,20475.2
+Nambung,Western Australia,WA,19390.06
+Nairana,Queensland,QLD,19379.51
+Bunya Mountains,Queensland,QLD,19372.81
+Abercrombie River,New South Wales,NSW,19340.01
+Greater Beedelup,Western Australia,WA,19286.96
+Chaelundi,New South Wales,NSW,19121.77
+Burrowa - Pine Mountain,Victoria,VIC,18964.64
+Willandra,New South Wales,NSW,18855.02
+Dulcie Range,Northern Territory,NT,18778.91
+Milyeannup,Western Australia,WA,18697.91
+Mount William,Tasmania,TAS,18590.92
+Cobboboonee,Victoria,VIC,18550.81
+Walpole-Nornalup,Western Australia,WA,18545.99
+Mount Barney,Queensland,QLD,18315.72
+Ben Lomond,Tasmania,TAS,18190.12
+Savage River,Tasmania,TAS,17987.98
+Greater Bendigo,Victoria,VIC,17508.88
+Whitsunday Islands,Queensland,QLD,17465.33
+Kirrama,Queensland,QLD,17463.23
+Nowendoc,New South Wales,NSW,17343.95
+Lawley River,Western Australia,WA,17319.07
+Moore River,Western Australia,WA,17234.88
+Nymboi-Binderay,New South Wales,NSW,17208.59
+Gheebulum Kunungai (Moreton Island),Queensland,QLD,17070.89
+Tully Falls,Queensland,QLD,17043.13
+Hilliger,Western Australia,WA,16986.4
+Freycinet,Tasmania,TAS,16863.87
+Byfield,Queensland,QLD,16847.13
+Tallaganda,New South Wales,NSW,16683.83
+Mount Remarkable,South Australia,SA,16651.13
+Dryandra,Western Australia,WA,16535.95
+Coolah Tops,New South Wales,NSW,16246.36
+Cunnawarra,New South Wales,NSW,16220.65
+Warlibirri,Western Australia,WA,15872.43
+Douglas-Apsley,Tasmania,TAS,15831.92
+Richmond Range,New South Wales,NSW,15715.27
+Curracabundi,New South Wales,NSW,15675.61
+Gardens of Stone,New South Wales,NSW,15634.37
+Ku-ring-gai Chase,New South Wales,NSW,15533.39
+Kumbatine,New South Wales,NSW,15388.73
+Dharug,New South Wales,NSW,15324.13
+Royal,New South Wales,NSW,15324.08
+Murray River,South Australia,SA,15046.36
+Toonumbar,New South Wales,NSW,14938.7
+Adelaide International Bird Sanctuary -Winaityinaityi Pangkara,South Australia,SA,14850.97
+Warby-Ovens,Victoria,VIC,14708.21
+Wondul Range,Queensland,QLD,14613.02
+Mitchell River,Victoria,VIC,14402.47
+Yalgorup,Western Australia,WA,14180.08
+Mount Walsh,Queensland,QLD,14179.77
+Narkoola,Queensland,QLD,14059.23
+Mummel Gulf,New South Wales,NSW,14056.94
+Greater Hawke,Western Australia,WA,14008.85
+Kara Kara,Victoria,VIC,13982.07
+Elsey,Northern Territory,NT,13898.93
+Wiliyan-ngurru,Queensland,QLD,13758.49
+Biamanga,New South Wales,NSW,13569.3
+Binya,Queensland,QLD,13379.21
+Dryander,Queensland,QLD,13337.93
+Naree Budjong Djara,Queensland,QLD,13218.21
+Badgingarra,Western Australia,WA,13105.24
+Murrumbidgee Valley,New South Wales,NSW,13027.38
+Baw Baw,Victoria,VIC,12781.31
+Hell Hole Gorge,Queensland,QLD,12735.26
+Heathcote-Graytown,Victoria,VIC,12692.92
+Greater Preston,Western Australia,WA,12672.45
+Sundown,Queensland,QLD,12632.55
+Lake Bindegolly,Queensland,QLD,12526.2
+Murramarang,New South Wales,NSW,12349.51
+Helena,Western Australia,WA,12268.67
+Hartz Mountains,Tasmania,TAS,12151.05
+Brisbane Water,New South Wales,NSW,12102.49
+Dorrigo,New South Wales,NSW,11768.56
+Lockyer,Queensland,QLD,11765.41
+Girraween,Queensland,QLD,11762.47
+Carrai,New South Wales,NSW,11707.65
+Marramarra,New South Wales,NSW,11667.54
+Wiltshire-Butler,Western Australia,WA,11649.18
+Maria Island,Tasmania,TAS,11576.0
+Conjola,New South Wales,NSW,11549.42
+Kooraban,New South Wales,NSW,11460.43
+Danbulla,Queensland,QLD,11425.47
+Tapin Tops,New South Wales,NSW,11156.65
+Barool,New South Wales,NSW,11155.83
+Cathedral Rock,New South Wales,NSW,11071.15
+Boorara-Gardner,Western Australia,WA,11016.72
+Little Mulgrave,Queensland,QLD,10972.29
+Wongi,Queensland,QLD,10936.97
+Tasman,Tasmania,TAS,10910.52
+Dhilba Guuranda-Innes,South Australia,SA,10846.93
+Hann Tableland,Queensland,QLD,10797.67
+Beowa,New South Wales,NSW,10759.21
+Crowdy Bay,New South Wales,NSW,10706.57
+Precipice,Queensland,QLD,10503.92
+Curtis Island,Queensland,QLD,10330.75
+French Island,Victoria,VIC,10317.84
+Limeburners Creek,New South Wales,NSW,10168.02
+Mapleton,Queensland,QLD,10077.35
+Stokes,Western Australia,WA,10027.13
+Canunda,South Australia,SA,9982.1
+Kemendok,New South Wales,NSW,9916.9
+Lake Muir,Western Australia,WA,9636.23
+Nangar,New South Wales,NSW,9412.78
+Lower Goulburn,Victoria,VIC,9321.01
+Gunbower,Victoria,VIC,9316.59
+Castle Tower,Queensland,QLD,9306.55
+Mount Grenfell,New South Wales,NSW,9200.85
+Mount Augustus,Western Australia,WA,9163.46
+Yabbra,New South Wales,NSW,8980.33
+Dawes,Queensland,QLD,8912.38
+Bald Rock,New South Wales,NSW,8904.86
+Brisbane Ranges,Victoria,VIC,8880.87
+Conimbla,New South Wales,NSW,8847.33
+Mowbray,Queensland,QLD,8799.43
+Christmas Island,External territories,EXT,8776.65
+Weddin Mountains,New South Wales,NSW,8718.44
+Wapma Thura-Southern Flinders Ranges,South Australia,SA,8696.05
+Annan River (Yuku Baja-Muliku),Queensland,QLD,8686.25
+Tarlo River,New South Wales,NSW,8649.66
+Bribie Island,Queensland,QLD,8612.09
+Cape Upstart,Queensland,QLD,8575.96
+Budj Bim,Victoria,VIC,8570.89
+Alexander Morrison,Western Australia,WA,8498.43
+Lakeside,Western Australia,WA,8471.02
+Littabella,Queensland,QLD,8382.74
+Cocoparra,New South Wales,NSW,8298.73
+Woko,New South Wales,NSW,8226.94
+Kings Plains,New South Wales,NSW,8210.22
+Nightcap,New South Wales,NSW,8108.53
+Gadgarra,Queensland,QLD,8073.83
+Fortis Creek,New South Wales,NSW,7909.45
+Isla Gorge,Queensland,QLD,7889.54
+Gourock,New South Wales,NSW,7848.55
+Watagans,New South Wales,NSW,7791.54
+Humboldt,Queensland,QLD,7701.5
+Kwiambal,New South Wales,NSW,7681.27
+Strzelecki,Tasmania,TAS,7664.05
+Kinrara,Queensland,QLD,7608.57
+Bellthorpe,Queensland,QLD,7599.33
+Tregole,Queensland,QLD,7576.26
+Finucane Island,Queensland,QLD,7492.75
+Narrien Range,Queensland,QLD,7455.17
+Pinnacles,Queensland,QLD,7409.44
+Hat Head,New South Wales,NSW,7405.29
+Budderoo,New South Wales,NSW,7381.79
+Albinia,Queensland,QLD,7363.48
+Cape Palmerston,Queensland,QLD,7191.87
+Southwood,Queensland,QLD,7120.06
+Beeron,Queensland,QLD,7045.66
+Mount Royal,New South Wales,NSW,6974.9
+Dharawal,New South Wales,NSW,6928.6
+Jane,Western Australia,WA,6867.67
+Capertee,New South Wales,NSW,6775.81
+Good Night Scrub,Queensland,QLD,6671.61
+Towarri,New South Wales,NSW,6669.38
+Springbrook,Queensland,QLD,6542.02
+Herberton Range,Queensland,QLD,6536.36
+Biriwal Bulga,New South Wales,NSW,6489.92
+Wallingat,New South Wales,NSW,6484.12
+Greater Dordagup,Western Australia,WA,6410.22
+Terrick Terrick,Victoria,VIC,6388.29
+Whicher,Western Australia,WA,6353.99
+Korung,Western Australia,WA,6353.88
+Forty Mile Scrub,Queensland,QLD,6307.04
+Russell River,Queensland,QLD,6199.72
+Warro,Queensland,QLD,6080.35
+Forest Den,Queensland,QLD,5891.85
+Mimosa Rocks,New South Wales,NSW,5835.93
+Macalister Range,Queensland,QLD,5628.05
+Bindarri,New South Wales,NSW,5575.65
+Booderee,Jervis Bay Territory,JBT,5530.16
+Gumbaynggirr,New South Wales,NSW,5484.03
+Boyndaminup,Western Australia,WA,5443.25
+Bingera,Queensland,QLD,5440.38
+Junee,Queensland,QLD,5411.12
+Barranyi (North Island),Northern Territory,NT,5381.13
+Poona,Queensland,QLD,5349.87
+Koreelah,New South Wales,NSW,5242.67
+Warrabah,New South Wales,NSW,5214.16
+Porcupine Gorge,Queensland,QLD,5198.25
+Jervis Bay,New South Wales,NSW,5191.48
+South Bruny,Tasmania,TAS,5181.39
+Murujuga,Western Australia,WA,5137.53
+Mount Jerusalem,New South Wales,NSW,5097.26
+Hunter Wetlands,New South Wales,NSW,5011.13
+Barakee,New South Wales,NSW,4991.97
+Gulaga,New South Wales,NSW,4959.36
+Halifax Bay Wetlands,Queensland,QLD,4944.59
+Nour Nour,Queensland,QLD,4943.46
+Deepwater,Queensland,QLD,4859.66
+Gulngay,Queensland,QLD,4849.51
+Boonoo Boonoo,New South Wales,NSW,4803.42
+Ghin-Doo-Ee,New South Wales,NSW,4795.97
+Mount Imlay,New South Wales,NSW,4716.86
+Mole Creek Karst,Tasmania,TAS,4651.85
+Beelu,Western Australia,WA,4650.5
+Narawntapu,Tasmania,TAS,4501.42
+Deep Creek,South Australia,SA,4468.7
+Avon Valley,Western Australia,WA,4459.11
+Cataract,New South Wales,NSW,4376.53
+Tooloom,New South Wales,NSW,4372.57
+Ella Bay,Queensland,QLD,4355.17
+Oakview,Queensland,QLD,4349.31
+Tathra,Western Australia,WA,4322.41
+Bimberamala,New South Wales,NSW,4319.64
+Bongil Bongil,New South Wales,NSW,4288.23
+Serpentine,Western Australia,WA,4285.41
+Capoompeta,New South Wales,NSW,4278.79
+Mount Archer,Queensland,QLD,4261.82
+Wollumbin,New South Wales,NSW,4248.3
+Tewantin,Queensland,QLD,4184.47
+Djiru,Queensland,QLD,4178.18
+Mazeppa,Queensland,QLD,4125.74
+Broadwater,New South Wales,NSW,4098.81
+Woondum,Queensland,QLD,4049.77
+Popran,New South Wales,NSW,4031.9
+Torndirrup,Western Australia,WA,4021.65
+Jerrawangala,New South Wales,NSW,4017.65
+Bago Bluff,New South Wales,NSW,3978.06
+Waychinicup,Western Australia,WA,3974.67
+Magnetic Island,Queensland,QLD,3949.06
+Bramley,Western Australia,WA,3891.66
+Warra,New South Wales,NSW,3889.63
+Meroo,New South Wales,NSW,3839.07
+Kelvin,Queensland,QLD,3826.56
+Eucla,Western Australia,WA,3793.23
+Mebbin,New South Wales,NSW,3779.18
+Bungawalbin,New South Wales,NSW,3711.21
+Mount Mackay,Queensland,QLD,3687.68
+West Cape Howe,Western Australia,WA,3671.25
+Hull River,Queensland,QLD,3653.46
+Cascade,New South Wales,NSW,3602.24
+Berowra Valley,New South Wales,NSW,3594.67
+Dandenong Ranges,Victoria,VIC,3533.62
+Karuah,New South Wales,NSW,3520.15
+Percy Isles,Queensland,QLD,3506.94
+Yanununbeyan,New South Wales,NSW,3486.58
+Chillagoe-Mungana Caves,Queensland,QLD,3482.88
+Guula Ngurra,New South Wales,NSW,3401.1
+South Cumberland Islands,Queensland,QLD,3365.38
+Niiwalarra Islands,Western Australia,WA,3352.24
+Grey Peaks,Queensland,QLD,3347.96
+Werakata,New South Wales,NSW,3335.01
+Scott,Western Australia,WA,3322.29
+Ramornie,New South Wales,NSW,3272.17
+Deer Reserve,Queensland,QLD,3225.76
+Gloucester Island,Queensland,QLD,3113.47
+Turon,New South Wales,NSW,3098.63
+Rocky Cape,Tasmania,TAS,3097.74
+Eurobodalla,New South Wales,NSW,3030.83
+Alfred,Victoria,VIC,3021.75
+Glass House Mountains,Queensland,QLD,3017.83
+Butterleaf,New South Wales,NSW,3004.83
+Warren,Western Australia,WA,2990.56
+Nuga Nuga,Queensland,QLD,2982.24
+Glenbar,Queensland,QLD,2979.5
+Easter,Western Australia,WA,2976.87
+Barron Gorge,Queensland,QLD,2970.04
+Mount Aberdeen,Queensland,QLD,2943.22
+Cania Gorge,Queensland,QLD,2923.57
+Yanchep,Western Australia,WA,2913.09
+Noosa,Queensland,QLD,2894.81
+Heathcote,New South Wales,NSW,2875.42
+Bellinger River,New South Wales,NSW,2837.41
+Lindeman Islands,Queensland,QLD,2826.16
+Minerva Hills,Queensland,QLD,2823.8
+Walyunga,Western Australia,WA,2802.06
+Basket Swamp,New South Wales,NSW,2800.06
+Danggu,Western Australia,WA,2795.07
+Wallaroo,New South Wales,NSW,2784.01
+Broad Sound Islands,Queensland,QLD,2747.56
+John Forrest,Western Australia,WA,2699.93
+Snake Range,Queensland,QLD,2689.02
+Porongurup,Western Australia,WA,2685.9
+Mornington Peninsula,Victoria,VIC,2681.88
+Bournda,New South Wales,NSW,2661.31
+Mares Forest,New South Wales,NSW,2645.31
+Woowoonga,Queensland,QLD,2641.74
+Mount Pikapene,New South Wales,NSW,2609.98
+Beninbi,Queensland,QLD,2595.72
+Dunggir,New South Wales,NSW,2582.85
+Bandilngan  (Windjana Gorge),Western Australia,WA,2573.03
+Drovers Cave,Western Australia,WA,2564.5
+Single,New South Wales,NSW,2563.13
+Peak Range,Queensland,QLD,2516.6
+Midgegooroo,Western Australia,WA,2493.04
+Cordalba,Queensland,QLD,2476.92
+Eubenangee Swamp,Queensland,QLD,2472.5
+Maalan,Queensland,QLD,2470.54
+Port Campbell,Victoria,VIC,2424.3
+Maria,New South Wales,NSW,2418.65
+The Lakes,Victoria,VIC,2407.34
+Dalgarup,Western Australia,WA,2378.67
+Tomaree,New South Wales,NSW,2324.26
+Maryland,New South Wales,NSW,2288.3
+Mount Martin,Queensland,QLD,2272.36
+Garigal,New South Wales,NSW,2263.37
+Basilisk Range,Queensland,QLD,2221.33
+Mudlo,Queensland,QLD,2187.77
+Yarriabini,New South Wales,NSW,2179.83
+Mount Nothofagus,New South Wales,NSW,2154.43
+Rundle Range,Queensland,QLD,2154.35
+Endeavour River,Queensland,QLD,2130.98
+Everlasting Swamp,New South Wales,NSW,2109.89
+Gull Rock,Western Australia,WA,2107.03
+Tamborine,Queensland,QLD,2091.94
+Tuart Forest,Western Australia,WA,2085.51
+Mirima,Western Australia,WA,2066.33
+Tarra-Bulga,Victoria,VIC,2027.92
+Khappinghat,New South Wales,NSW,2008.43
+Ban Ban,Queensland,QLD,1958.05
+Pioneer Peaks,Queensland,QLD,1944.98
+Livingstone,New South Wales,NSW,1920.2
+Maleny,Queensland,QLD,1881.77
+Worimi,New South Wales,NSW,1877.3
+Tumoulin,Queensland,QLD,1871.91
+Bendick Murrell,New South Wales,NSW,1860.74
+Keverstone,New South Wales,NSW,1854.76
+Wietalaba,Queensland,QLD,1831.24
+Middle Brother,New South Wales,NSW,1828.48
+Goomboorian,Queensland,QLD,1816.32
+Nangur,Queensland,QLD,1811.7
+Bluff Hill,Queensland,QLD,1811.01
+Coorabakh,New South Wales,NSW,1807.44
+Crows Nest,Queensland,QLD,1796.19
+Molle Islands,Queensland,QLD,1779.81
+Timbarra,New South Wales,NSW,1772.72
+Northumberland Islands,Queensland,QLD,1769.48
+Gympie,Queensland,QLD,1769.17
+Dalrymple,Queensland,QLD,1755.47
+William Bay,Western Australia,WA,1745.58
+Mount Richmond,Victoria,VIC,1737.79
+Mooloolah River,Queensland,QLD,1675.56
+Marrangaroo,New South Wales,NSW,1671.61
+Nerang,Queensland,QLD,1658.84
+Southern Moreton Bay Islands,Queensland,QLD,1655.73
+Blackwood,Queensland,QLD,1647.28
+Dan Dan,Queensland,QLD,1645.68
+Bouddi,New South Wales,NSW,1617.74
+Unnamed WA46400,Western Australia,WA,1570.87
+Kondalilla,Queensland,QLD,1568.07
+Houtman Abrolhos Islands,Western Australia,WA,1564.05
+Onkaparinga River,South Australia,SA,1544.57
+Booti Booti,New South Wales,NSW,1535.52
+Tarong,Queensland,QLD,1517.79
+Minjary,New South Wales,NSW,1459.62
+Wolfe Creek Meteorite Crater,Western Australia,WA,1454.6
+Mount Clunie,New South Wales,NSW,1413.79
+Benambra,New South Wales,NSW,1400.15
+Forest Grove,Western Australia,WA,1378.64
+Lind,Victoria,VIC,1359.66
+Yarrahapinni Wetlands,New South Wales,NSW,1345.27
+Bangadilly,New South Wales,NSW,1323.54
+Charles Darwin,Northern Territory,NT,1302.8
+Columbey,New South Wales,NSW,1285.25
+Clyde River,New South Wales,NSW,1264.48
+Mount Chinghee,Queensland,QLD,1259.29
+Orpheus Island,Queensland,QLD,1242.05
+Mount Spurgeon,Queensland,QLD,1217.29
+Jimberoo,New South Wales,NSW,1172.19
+Smith Islands,Queensland,QLD,1152.88
+Mooball,New South Wales,NSW,1150.53
+Hassell,Western Australia,WA,1138.19
+Mallanganee,New South Wales,NSW,1135.27
+Dooragan,New South Wales,NSW,1096.15
+Cape Hillsborough,Queensland,QLD,1073.71
+Mount Binga,Queensland,QLD,1070.31
+West Hill,Queensland,QLD,1065.93
+Macquarie Pass,New South Wales,NSW,1046.6
+Jindalee,New South Wales,NSW,1037.25
+Cleland,South Australia,SA,1034.6
+Mungada Ridge,Western Australia,WA,1031.18
+Pumicestone,Queensland,QLD,1014.56
+Bugong,New South Wales,NSW,1003.48
+Cherbourg,Queensland,QLD,998.03
+Brampton Islands,Queensland,QLD,973.95
+Neerabup,Western Australia,WA,973.48
+Crater Lakes,Queensland,QLD,964.07
+Seven Mile Beach,New South Wales,NSW,962.19
+Junuy Juluum,New South Wales,NSW,944.94
+Moogerah Peaks,Queensland,QLD,944.25
+Lizard Island,Queensland,QLD,937.24
+Scheyville,New South Wales,NSW,931.61
+Indwarra,New South Wales,NSW,931.0
+Bendidee,Queensland,QLD,927.55
+Kurrimine Beach,Queensland,QLD,894.44
+Erringibba,Queensland,QLD,876.44
+Gloucester,Western Australia,WA,874.64
+Mount Ossa,Queensland,QLD,867.26
+Belair,South Australia,SA,837.26
+Mount Colosseum,Queensland,QLD,827.2
+Goold Island,Queensland,QLD,816.54
+Bungonia,New South Wales,NSW,768.99
+Mount O'Connell,Queensland,QLD,756.12
+Maria Creek,Queensland,QLD,747.52
+Yelverton,Western Australia,WA,728.07
+Keppel Bay Islands,Queensland,QLD,726.02
+Lane Cove,New South Wales,NSW,718.58
+Ravensbourne,Queensland,QLD,687.88
+Ulidarra,New South Wales,NSW,683.56
+Gaagal Wanggaan (South Beach),New South Wales,NSW,665.31
+Thirlmere Lakes,New South Wales,NSW,663.1
+Naracoorte Caves,South Australia,SA,658.14
+Moresby Range,Queensland,QLD,647.62
+Malbon Thompson Range,Queensland,QLD,624.99
+Family Islands,Queensland,QLD,622.68
+Gir-um-bit,New South Wales,NSW,608.72
+Wild Cattle Island,Queensland,QLD,591.44
+Mount Cook,Queensland,QLD,586.49
+Wyrrabalong,New South Wales,NSW,580.76
+Mount Etna Caves,Queensland,QLD,579.56
+Goolawah,New South Wales,NSW,573.16
+Morwell,Victoria,VIC,565.32
+Alton,Queensland,QLD,557.97
+Woroon,Queensland,QLD,551.3
+Unnamed WA53843,Western Australia,WA,548.44
+Glenthorne -Ityamaiitpinna Yarta,South Australia,SA,547.61
+Point Nepean,Victoria,VIC,539.87
+Yiraaldiya,New South Wales,NSW,538.84
+Georges River,New South Wales,NSW,533.95
+Goonengerry,New South Wales,NSW,529.59
+Glastonbury,Queensland,QLD,527.47
+Ben Halls Gap,New South Wales,NSW,516.09
+Davies Creek,Queensland,QLD,499.51
+Kamay Botany Bay,New South Wales,NSW,498.42
+Woolooma,New South Wales,NSW,496.55
+Norfolk Island (Mt Pitt),External territories,EXT,493.46
+Possession Island,Queensland,QLD,488.45
+Newry Islands,Queensland,QLD,484.87
+Dularcha,Queensland,QLD,470.26
+Teerk Roo Ra,Queensland,QLD,447.7
+Cattai,New South Wales,NSW,427.52
+Venman Bushland,Queensland,QLD,426.79
+Gatton,Queensland,QLD,425.8
+Hindmarsh Valley,South Australia,SA,424.82
+Auburn River,Queensland,QLD,409.5
+Kalamunda,Western Australia,WA,397.22
+Sydney Harbour,New South Wales,NSW,395.3
+Esk,Queensland,QLD,384.39
+Tuchekoi,Queensland,QLD,383.79
+Mount Coolum,Queensland,QLD,363.4
+Millstream Falls,Queensland,QLD,361.15
+Mount Hypipamee,Queensland,QLD,347.86
+Clump Mountain,Queensland,QLD,326.03
+Fitzroy Island,Queensland,QLD,308.07
+Fairlies Knob,Queensland,QLD,306.09
+Belford,New South Wales,NSW,288.47
+Churchill,Victoria,VIC,271.93
+Woocoo,Queensland,QLD,243.68
+Pulu Keeling,External territories,EXT,213.09
+Benarkin,Queensland,QLD,203.79
+Curtain Fig,Queensland,QLD,203.44
+Greenmount,Western Australia,WA,202.31
+Arakwal,New South Wales,NSW,199.19
+Capricornia Cays,Queensland,QLD,193.14
+Norfolk Island (Phillip Island),External territories,EXT,192.08
+Capricorn Coast,Queensland,QLD,182.25
+Wallarah,New South Wales,NSW,174.5
+Sir James Mitchell,Western Australia,WA,172.98
+Freshwater,Queensland,QLD,161.15
+Pidna,Queensland,QLD,152.92
+Organ Pipes,Victoria,VIC,152.56
+Repulse Islands,Queensland,QLD,149.75
+Arakoon,New South Wales,NSW,147.66
+Wickham,Queensland,QLD,145.98
+Baga,Queensland,QLD,145.93
+Tilligerry,New South Wales,NSW,141.31
+Unnamed WA17519,Western Australia,WA,132.15
+Turtle Group,Queensland,QLD,121.1
+Jardine River,Queensland,QLD,117.57
+Gooseberry Hill,Western Australia,WA,106.69
+Dimalurru,Western Australia,WA,91.04
+Frankland Group,Queensland,QLD,83.59
+Unnamed WA47688,Western Australia,WA,81.18
+Scone Mountain,New South Wales,NSW,78.04
+Three Islands Group,Queensland,QLD,77.41
+Malabar Headland,New South Wales,NSW,75.89
+The Palms,Queensland,QLD,71.93
+Ferntree Creek,Queensland,QLD,71.7
+St Helena Island,Queensland,QLD,71.23
+Sea Acres,New South Wales,NSW,70.74
+Claremont Isles,Queensland,QLD,60.54
+Brook Islands,Queensland,QLD,58.75
+Lesmurdie Falls,Western Australia,WA,56.82
+Swain Reefs,Queensland,QLD,56.05
+Hasties Swamp,Queensland,QLD,55.22
+Brockman,Western Australia,WA,51.23
+Eudlo Creek,Queensland,QLD,42.19
+Amamoor,Queensland,QLD,38.58
+Topaz Road,Queensland,QLD,37.35
+Yuwi Paree Toolkoon,Queensland,QLD,35.73
+Holbourne Island,Queensland,QLD,35.6
+Triunia,Queensland,QLD,33.98
+Saltwater,New South Wales,NSW,32.98
+Barnard Island Group,Queensland,QLD,30.9
+Reliance Creek,Queensland,QLD,28.69
+Nicoll Scrub,Queensland,QLD,26.8
+Coalstoun Lakes,Queensland,QLD,26.31
+Burleigh Head,Queensland,QLD,25.96
+Mapleton Falls,Queensland,QLD,25.86
+Mount Pinbarren,Queensland,QLD,22.75
+Daintree,Queensland,QLD,22.11
+Geham,Queensland,QLD,21.95
+Pipeclay,Queensland,QLD,14.47
+Fort Lytton,Queensland,QLD,12.85
+Palmerston Rocks,Queensland,QLD,9.52
+Ngalba Bulal,Queensland,QLD,8.15
+Green Island,Queensland,QLD,7.89
+Sandbanks,Queensland,QLD,7.22
+Yungaburra,Queensland,QLD,5.44
+Hampton,Queensland,QLD,3.88
+Black Mountain,Queensland,QLD,2.98
+Michaelmas and Upolu Cays,Queensland,QLD,2.08
+Sarabah,Queensland,QLD,1.37

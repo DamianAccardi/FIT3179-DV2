@@ -1,0 +1,677 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Australia's National Parks | FIT3179</title>
+
+  <!-- Vega libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #ffffff;
+      color: #172b1d;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 25px;
+    }
+
+    /* Header */
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    h1 {
+      font-size: 38px;
+      margin-bottom: 15px;
+      color: #173c28;
+    }
+
+    .intro {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #455a49;
+    }
+
+    /* Visualisation sections */
+
+    section {
+      margin-bottom: 75px;
+    }
+
+    h2 {
+      font-size: 28px;
+      color: #173c28;
+      margin-bottom: 15px;
+    }
+
+    .description {
+      font-size: 17px;
+      max-width: 850px;
+      margin-bottom: 25px;
+    }
+
+    /* Visualisation containers */
+
+    .visualisation-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin: 30px auto;
+    }
+
+    #choropleth,
+    #dot_location_map,
+    #proportional_symbol_map,
+    #national_park_treemap,
+    #national_park_heatmap,
+    #park_size_boxplot {
+      max-width: 100%;
+      width: 100%;
+      text-align: center;
+    }
+
+    .vega-embed {
+      max-width: 100%;
+    }
+
+    .vega-embed svg,
+    .vega-embed canvas {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Source information */
+
+    .source {
+      font-size: 13px;
+      color: #666666;
+      margin-top: 20px;
+    }
+
+    .source a {
+      color: #176b43;
+    }
+
+    /* Section divider */
+
+    hr {
+      border: none;
+      border-top: 1px solid #dddddd;
+      margin: 55px 0;
+    }
+
+    /* Footer */
+
+    footer {
+      border-top: 1px solid #dddddd;
+      padding-top: 20px;
+      margin-top: 70px;
+      text-align: center;
+      font-size: 13px;
+      color: #777777;
+    }
+
+    /* Responsive layout */
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 25px 15px;
+      }
+
+      h1 {
+        font-size: 29px;
+      }
+
+      h2 {
+        font-size: 23px;
+      }
+
+      .intro,
+      .description {
+        font-size: 15px;
+      }
+
+      section {
+        margin-bottom: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- ===================================== -->
+    <!-- MAIN HEADER                          -->
+    <!-- ===================================== -->
+
+    <header>
+
+      <h1>Exploring Australia's National Parks</h1>
+
+      <p class="intro">
+        Discover where Australia's national parks are located,
+        how they are distributed across the country,
+        which parks attract the most visitors,
+        and how protected land has developed over time.
+      </p>
+
+    </header>
+
+
+    <!-- ===================================== -->
+    <!-- CHART 1: CHOROPLETH MAP               -->
+    <!-- ===================================== -->
+
+    <section id="section-choropleth">
+
+      <h2>1. Where Do Australians Visit NSW National Parks?</h2>
+
+      <p class="description">
+        National parks across New South Wales attract millions
+        of domestic visits each year.
+
+        This map highlights selected national parks,
+        with darker shades of green representing higher
+        estimated annual domestic visits during 2024–25.
+
+        Hover over a park to explore its visitor numbers
+        and land area.
+      </p>
+
+      <div class="visualisation-container">
+        <div id="choropleth"></div>
+      </div>
+
+      <p class="source">
+        Sources:
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
+        Selected parks only.
+      </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ===================================== -->
+    <!-- CHART 2: DOT LOCATION MAP            -->
+    <!-- ===================================== -->
+
+    <section id="section-dot-map">
+
+      <h2>2. Where Are Australia's National Parks Concentrated?</h2>
+
+      <p class="description">
+        Australia's national parks are distributed across
+        all states and territories, from coastal regions
+        to remote inland landscapes.
+
+        Each green dot represents a national park location
+        recorded in the Collaborative Australian Protected
+        Areas Database (CAPAD) 2024.
+
+        Use the state filter to explore national park
+        locations within different Australian states
+        and territories.
+
+        Hover over individual dots to see the park name,
+        state and recorded land area.
+      </p>
+
+      <div class="visualisation-container">
+        <div id="dot_location_map"></div>
+      </div>
+
+      <p class="source">
+        Source:
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+        State boundaries:
+        <a
+          href="https://github.com/rowanhogan/australian-states"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          australian-states GeoJSON
+        </a>.
+        Dots indicate representative park locations,
+        not geographic boundaries.
+      </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ===================================== -->
+    <!-- CHART 3: PROPORTIONAL SYMBOL MAP     -->
+    <!-- ===================================== -->
+
+    <section id="section-proportional-map">
+
+      <h2>3. Where Are NSW's Most Visited National Parks?</h2>
+
+      <p class="description">
+        Some national parks receive significantly more
+        visits than others.
+
+        This map compares selected NSW national parks
+        using proportional circles, where larger circles
+        represent higher estimated domestic visits
+        in 2024–25.
+
+        The position of each circle represents the
+        national park's geographic location.
+
+        Hover over a circle to explore its park name
+        and estimated annual domestic visits.
+      </p>
+
+      <div class="visualisation-container">
+        <div id="proportional_symbol_map"></div>
+      </div>
+
+      <p class="source">
+        Sources:
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
+        Circle area represents estimated domestic visits.
+        Selected parks only.
+      </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ===================================== -->
+    <!-- CHART 4: TREEMAP                     -->
+    <!-- ===================================== -->
+
+    <section id="section-treemap">
+
+      <h2>4. Which National Parks Protect the Most Land?</h2>
+
+      <p class="description">
+        Australia's national parks vary dramatically in size.
+
+        While some protect relatively small areas,
+        others cover vast landscapes across the country.
+
+        This treemap compares the 40 largest national parks
+        in Australia using data from CAPAD 2024.
+
+        Each rectangle represents a national park.
+        Larger rectangles indicate a greater area of
+        protected land, while different colours represent
+        Australian states and territories.
+
+        Hover over a rectangle to explore the national
+        park's name, state and protected land area
+        in hectares and square kilometres.
+      </p>
+
+      <div class="visualisation-container">
+        <div id="national_park_treemap"></div>
+      </div>
+
+      <p class="source">
+        Source:
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+        The 40 largest national parks by mapped
+        non-overlapping protected area.
+      </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ===================================== -->
+    <!-- CHART 5: DECLARATION HEATMAP         -->
+    <!-- ===================================== -->
+
+    <section id="section-heatmap">
+
+      <h2>5. When Were Australia's National Parks First Protected?</h2>
+
+      <p class="description">
+        Australia's network of national parks and protected
+        natural areas has developed over many decades.
+
+        This heatmap compares when currently listed
+        national parks were first recorded as protected
+        areas across Australian states and territories.
+
+        Each column represents a decade, while each row
+        represents a state or territory.
+
+        Darker green cells indicate a greater number
+        of parks first protected during that period.
+
+        Hover over a cell to explore the exact number
+        of parks and compare historical trends
+        between states.
+      </p>
+
+      <div class="visualisation-container">
+        <div id="national_park_heatmap"></div>
+      </div>
+
+      <p class="source">
+        Source:
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+        Includes currently listed national parks with
+        usable original gazettal dates.
+        Initial protection may precede national park designation.
+      </p>
+
+    </section>
+
+
+    <hr>
+
+
+    <!-- ===================================== -->
+    <!-- CHART 6: BOX-AND-WHISKER PLOT        -->
+    <!-- ===================================== -->
+
+    <section id="section-boxplot">
+
+      <h2>6. How Does National Park Size Differ Between States?</h2>
+
+      <p class="description">
+        National parks vary considerably in size across
+        Australia, from small protected areas to vast
+        natural landscapes covering thousands of
+        square kilometres.
+
+        This box-and-whisker plot compares national park
+        sizes across Australian states and territories.
+
+        The middle line of each box represents the median
+        park size, while the box covers the middle 50%
+        of national parks.
+
+        The whiskers show the range of typical park sizes,
+        while individual points beyond the whiskers indicate
+        unusually small or large parks.
+
+        Orange diamonds highlight the largest national
+        park in each state. Hover over these diamonds
+        to identify the park and view its area.
+
+        The horizontal axis uses a logarithmic scale
+        to accommodate the large differences in park sizes.
+        Each major step represents a tenfold increase.
+      </p>
+
+      <div class="visualisation-container">
+        <div id="park_size_boxplot"></div>
+      </div>
+
+      <p class="source">
+        Source:
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+        Park sizes are calculated from mapped
+        non-overlapping protected areas.
+        Area values are displayed in square kilometres.
+      </p>
+
+    </section>
+
+
+    <!-- ===================================== -->
+    <!-- FOOTER                               -->
+    <!-- ===================================== -->
+
+    <footer>
+
+      <p>
+        FIT3179 Data Visualisation 2 | 2026
+      </p>
+
+      <p>
+        Created by Damian Accardi
+      </p>
+
+    </footer>
+
+  </div>
+
+
+  <!-- ===================================== -->
+  <!-- VEGA AND VEGA-LITE VISUALISATIONS     -->
+  <!-- ===================================== -->
+
+  <script>
+
+    // =====================================
+    // Chart 1: Choropleth Map
+    // =====================================
+
+    const choroplethSpec =
+      "charts/choropleth.vl.json";
+
+    vegaEmbed(
+      "#choropleth",
+      choroplethSpec,
+      {
+        actions: false,
+        renderer: "svg"
+      }
+    ).catch(error => {
+
+      console.error("Choropleth error:", error);
+
+      document.getElementById("choropleth").textContent =
+        "Unable to load the NSW national parks map: " +
+        error.message;
+
+    });
+
+
+    // =====================================
+    // Chart 2: Dot Location Map
+    // =====================================
+
+    const dotMapSpec =
+      "charts/dot_location_map.vl.json";
+
+    vegaEmbed(
+      "#dot_location_map",
+      dotMapSpec,
+      {
+        actions: false,
+        renderer: "svg"
+      }
+    ).catch(error => {
+
+      console.error("Dot map error:", error);
+
+      document.getElementById("dot_location_map").textContent =
+        "Unable to load the Australian national parks dot map: " +
+        error.message;
+
+    });
+
+
+    // =====================================
+    // Chart 3: Proportional Symbol Map
+    // =====================================
+
+    const symbolMapSpec =
+      "charts/proportional_symbol_map.vl.json";
+
+    vegaEmbed(
+      "#proportional_symbol_map",
+      symbolMapSpec,
+      {
+        actions: false,
+        renderer: "svg"
+      }
+    ).catch(error => {
+
+      console.error("Proportional symbol map error:", error);
+
+      document.getElementById("proportional_symbol_map").textContent =
+        "Unable to load the proportional symbol map: " +
+        error.message;
+
+    });
+
+
+    // =====================================
+    // Chart 4: Treemap
+    // =====================================
+
+    const treemapSpec =
+      "charts/treemap.json";
+
+    vegaEmbed(
+      "#national_park_treemap",
+      treemapSpec,
+      {
+        actions: false,
+        renderer: "svg"
+      }
+    ).catch(error => {
+
+      console.error("Treemap error:", error);
+
+      document.getElementById("national_park_treemap").textContent =
+        "Unable to load the treemap: " +
+        error.message;
+
+    });
+
+
+    // =====================================
+    // Chart 5: Declaration Heatmap
+    // =====================================
+
+    const heatmapSpec =
+      "charts/heatmap.vl.json";
+
+    vegaEmbed(
+      "#national_park_heatmap",
+      heatmapSpec,
+      {
+        actions: false,
+        renderer: "svg"
+      }
+    ).catch(error => {
+
+      console.error("Heatmap error:", error);
+
+      document.getElementById("national_park_heatmap").textContent =
+        "Unable to load the declaration heatmap: " +
+        error.message;
+
+    });
+
+
+    // =====================================
+    // Chart 6: Box-and-Whisker Plot
+    // =====================================
+
+    const boxplotSpec =
+      "charts/park_size_boxplot.vl.json";
+
+    vegaEmbed(
+      "#park_size_boxplot",
+      boxplotSpec,
+      {
+        actions: false,
+        renderer: "svg"
+      }
+    ).catch(error => {
+
+      console.error("Boxplot error:", error);
+
+      document.getElementById("park_size_boxplot").textContent =
+        "Unable to load the boxplot: " +
+        error.message;
+
+    });
+
+  </script>
+
+</body>
+</html>

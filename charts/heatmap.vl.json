@@ -1,0 +1,158 @@
+
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  
+    "title": {
+      "text": "When Were Australia's National Parks First Protected?",
+      "subtitle": "Number of currently listed national parks by first gazettal decade (CAPAD 2024)",
+      "anchor": "middle",
+      "fontSize": 19,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "offset": 15
+    },
+  
+    "width": 760,
+    "height": 330,
+    "background": "white",
+  
+    "data": {
+      "url": "data/national_park_declarations_by_decade.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "decade": "number",
+          "parks_declared": "number"
+        }
+      }
+    },
+  
+    "encoding": {
+      "x": {
+        "field": "decade",
+        "type": "ordinal",
+        "sort": "ascending",
+        "title": "Decade of original gazettal",
+        "axis": {
+          "labelAngle": -40,
+          "labelExpr": "datum.label + 's'",
+          "labelFontSize": 12,
+          "titlePadding": 12
+        }
+      },
+  
+      "y": {
+        "field": "state",
+        "type": "nominal",
+        "sort": [
+          "New South Wales",
+          "Victoria",
+          "Queensland",
+          "South Australia",
+          "Western Australia",
+          "Tasmania",
+          "Northern Territory",
+          "Australian Capital Territory"
+        ],
+        "title": null,
+        "axis": {
+          "labelFontSize": 12,
+          "labelLimit": 220
+        }
+      },
+  
+      "tooltip": [
+        {
+          "field": "state",
+          "type": "nominal",
+          "title": "State"
+        },
+        {
+          "field": "decade",
+          "type": "ordinal",
+          "title": "Decade"
+        },
+        {
+          "field": "parks_declared",
+          "type": "quantitative",
+          "title": "Parks first protected",
+          "format": ",.0f"
+        }
+      ]
+    },
+  
+    "layer": [
+      {
+        "mark": {
+          "type": "rect",
+          "stroke": "#ffffff",
+          "strokeWidth": 2
+        },
+  
+        "encoding": {
+          "color": {
+            "field": "parks_declared",
+            "type": "quantitative",
+            "title": "Number of parks",
+  
+            "scale": {
+              "scheme": "greens",
+              "domainMin": 0
+            },
+  
+            "legend": {
+              "orient": "bottom",
+              "direction": "horizontal",
+              "gradientLength": 300,
+              "titleFontSize": 12,
+              "labelFontSize": 11
+            }
+          }
+        }
+      },
+  
+      {
+        "transform": [
+          {
+            "filter": "datum.parks_declared > 0"
+          }
+        ],
+  
+        "mark": {
+          "type": "text",
+          "fontSize": 13,
+          "fontWeight": "bold",
+          "align": "center",
+          "baseline": "middle"
+        },
+  
+        "encoding": {
+          "text": {
+            "field": "parks_declared",
+            "type": "quantitative",
+            "format": ".0f"
+          },
+
+          "color": {
+            "condition": {
+                "test": "datum.parks_declared >= 30",
+                "value": "#ffffff"
+            },
+            "value": "#173322"
+          }
+        }
+      }
+    ],
+  
+    "config": {
+      "view": {
+        "stroke": null
+      },
+      "axis": {
+        "grid": false,
+        "domain": false,
+        "tickSize": 0
+      }
+    }
+  }
+  

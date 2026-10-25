@@ -1,0 +1,49 @@
+id,parent,park,state,area_ha
+root,,All selected parks,,0
+state_NSW,root,,New South Wales,0
+state_NT,root,,Northern Territory,0
+state_QLD,root,,Queensland,0
+state_SA,root,,South Australia,0
+state_TAS,root,,Tasmania,0
+state_VIC,root,,Victoria,0
+state_WA,root,,Western Australia,0
+park_001,state_SA,Munga-Thirri—Simpson Desert,South Australia,3605436.06
+park_002,state_NT,Kakadu,Northern Territory,1911121.92
+park_003,state_SA,Kati Thanda-Lake Eyre,South Australia,1350741.32
+park_004,state_NT,Judbarra / Gregory,Northern Territory,1300573.81
+park_005,state_WA,Karlamilyi,Western Australia,1283729.17
+park_006,state_QLD,Munga-Thirri,Queensland,1014431.67
+park_007,state_NT,Limmen,Northern Territory,958118.23
+park_008,state_SA,Witjira,South Australia,768161.19
+park_009,state_NSW,Kosciuszko,New South Wales,688944.64
+park_010,state_VIC,Murray - Sunset,Victoria,665846.82
+park_011,state_VIC,Alpine,Victoria,662436.51
+park_012,state_TAS,Southwest,Tasmania,641742.58
+park_013,state_WA,Karijini,Western Australia,624428.0
+park_014,state_WA,Matuwa Kurrara Kurrara,Western Australia,609321.05
+park_015,state_WA,Prince Regent,Western Australia,584817.35
+park_016,state_SA,Lake Torrens,South Australia,568759.17
+park_017,state_SA,Lake Gairdner,South Australia,556894.25
+park_018,state_QLD,Diamantina,Queensland,511216.17
+park_019,state_NSW,Wollemi,New South Wales,505561.85
+park_020,state_WA,Burringurrah,Western Australia,482603.13
+park_021,state_QLD,Staaten River,Queensland,468791.09
+park_022,state_TAS,Franklin-Gordon Wild Rivers,Tasmania,463565.89
+park_023,state_WA,Drysdale River,Western Australia,447673.31
+park_024,state_VIC,Wyperfeld,Victoria,359855.2
+park_025,state_NSW,Sturt,New South Wales,345565.7
+park_026,state_QLD,Currawinya,Queensland,343867.49
+park_027,state_WA,Kennedy Range,Western Australia,316825.42
+park_028,state_QLD,Carnarvon,Queensland,301340.24
+park_029,state_QLD,Girringun,Queensland,300459.54
+park_030,state_WA,Fitzgerald River,Western Australia,295706.2
+park_031,state_NT,Nitmiluk,Northern Territory,294661.86
+park_032,state_WA,Cape Arid,Western Australia,277672.62
+park_033,state_NSW,Blue Mountains,New South Wales,269339.4
+park_034,state_SA,Lake Frome,South Australia,259361.46
+park_035,state_NT,Tjoritja / West MacDonnell,Northern Territory,256684.75
+park_036,state_WA,Purnululu,Western Australia,243830.88
+park_037,state_WA,Millstream Chichester,Western Australia,238343.79
+park_038,state_WA,Collier Range,Western Australia,235222.8
+park_039,state_NT,Garig Gunak Barlu,Northern Territory,226004.23
+park_040,state_QLD,Great Sandy,Queensland,224467.37
