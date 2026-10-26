@@ -1,0 +1,154 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "Domestic visits to NSW NPWS parks at each survey year, 2008 to FY2024–25.",
+    "background": "white",
+    "title": {
+      "text": "How Has Visitation to NSW Parks Changed Since 2008?",
+      "subtitle": "Estimated annual domestic visits; 2024–25 is a financial-year estimate",
+      "anchor": "middle",
+      "fontSize": 19,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "offset": 17
+    },
+    "width": 760,
+    "height": 355,
+    "data": {
+      "url": "data/nsw_visitation_trends_2008_2025.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "year": "number",
+          "adult_visits": "number",
+          "child_visits": "number",
+          "total_visits": "number"
+        }
+      }
+    },
+    "transform": [
+      {
+        "calculate": "datum.total_visits / 1000000",
+        "as": "visits_millions"
+      }
+    ],
+    "encoding": {
+      "x": {
+        "field": "survey_year",
+        "type": "ordinal",
+        "sort": ["2008", "2010", "2012", "2014", "2016", "2018", "2020", "2022", "2024–25"],
+        "title": "Survey year",
+        "axis": {
+          "labelAngle": 0,
+          "labelFontSize": 12,
+          "titleFontSize": 13,
+          "labelPadding": 9,
+          "titlePadding": 14,
+          "ticks": false,
+          "domain": false
+        }
+      },
+      "y": {
+        "field": "visits_millions",
+        "type": "quantitative",
+        "title": "Domestic visits (millions)",
+        "scale": {"domain": [0, 72], "zero": true},
+        "axis": {
+          "format": ".0f",
+          "tickCount": 7,
+          "labelFontSize": 11,
+          "titleFontSize": 13,
+          "titlePadding": 14,
+          "grid": true,
+          "gridColor": "#e6ece8"
+        }
+      },
+      "tooltip": [
+        {"field": "survey_year", "type": "nominal", "title": "Survey year"},
+        {"field": "total_visits", "type": "quantitative", "title": "Total domestic visits", "format": ",.2f"},
+        {"field": "visits_millions", "type": "quantitative", "title": "Visits (millions)", "format": ".2f"},
+        {"field": "adult_visits", "type": "quantitative", "title": "Adult visits", "format": ",.2f"},
+        {"field": "child_visits", "type": "quantitative", "title": "Child visits", "format": ",.2f"},
+        {"field": "period", "type": "nominal", "title": "Reporting period"}
+      ]
+    },
+    "layer": [
+      {
+        "mark": {
+          "type": "line",
+          "stroke": "#206849",
+          "strokeWidth": 3.5
+        }
+      },
+      {
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "fill": "#206849",
+          "stroke": "white",
+          "strokeWidth": 1.5,
+          "size": 105
+        }
+      },
+      {
+        "transform": [{"filter": "datum.survey_year === '2024–25'"}],
+        "mark": {
+          "type": "point",
+          "filled": true,
+          "fill": "#e28d38",
+          "stroke": "#173c28",
+          "strokeWidth": 1,
+          "size": 180
+        }
+      },
+      {
+        "transform": [{"filter": "datum.survey_year === '2024–25'"}],
+        "mark": {
+          "type": "text",
+          "fontWeight": "bold",
+          "fontSize": 13,
+          "align": "right",
+          "baseline": "bottom",
+          "dx": -12,
+          "dy": -14,
+          "color": "#173c28"
+        },
+        "encoding": {
+          "text": {
+            "field": "visits_millions",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        }
+      },
+      {
+        "transform": [
+          {
+            "filter": "datum.survey_year === '2018' || datum.survey_year === '2020'"
+          }
+        ],
+        "mark": {
+          "type": "text",
+          "fontSize": 12,
+          "align": "center",
+          "baseline": "top",
+          "dy": 12,
+          "color": "#365a42"
+        },
+        "encoding": {
+          "text": {
+            "field": "visits_millions",
+            "type": "quantitative",
+            "format": ".2f"
+          }
+        }
+      }
+    ],
+    "config": {
+      "view": {"stroke": null},
+      "axis": {
+        "labelFont": "Arial",
+        "titleFont": "Arial"
+      }
+    }
+  }
+  

@@ -1,0 +1,340 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v6.json",
+    "description": "Adult and child domestic visits to NSW NPWS-managed parks by origin.",
+  
+    "width": 790,
+    "height": 350,
+    "padding": {
+      "top": 55,
+      "left": 75,
+      "right": 15,
+      "bottom": 85
+    },
+    "autosize": "pad",
+    "background": "white",
+  
+    "title": {
+      "text": "Who Visits NSW's National Parks and Reserves?",
+      "subtitle": "Width = share of all domestic visits; height = adult / child composition (2024–25)",
+      "anchor": "middle",
+      "fontSize": 19,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555",
+      "offset": 18
+    },
+  
+    "data": [
+      {
+        "name": "origins",
+        "url": "data/nsw_visits_by_origin_age_2024_25.csv",
+        "format": {
+          "type": "csv",
+          "parse": {
+            "order": "number",
+            "adults": "number",
+            "children": "number"
+          }
+        },
+        "transform": [
+          {
+            "type": "formula",
+            "as": "total",
+            "expr": "datum.adults + datum.children"
+          },
+          {
+            "type": "joinaggregate",
+            "fields": ["total"],
+            "ops": ["sum"],
+            "as": ["all_visits"]
+          },
+          {
+            "type": "window",
+            "sort": {
+              "field": "order",
+              "order": "ascending"
+            },
+            "ops": ["sum"],
+            "fields": ["total"],
+            "as": ["cumulative_visits"],
+            "frame": [null, 0]
+          },
+          {
+            "type": "formula",
+            "as": "x0",
+            "expr": "(datum.cumulative_visits - datum.total) / datum.all_visits"
+          },
+          {
+            "type": "formula",
+            "as": "x1",
+            "expr": "datum.cumulative_visits / datum.all_visits"
+          },
+          {
+            "type": "formula",
+            "as": "center_x",
+            "expr": "(datum.x0 + datum.x1) / 2"
+          },
+          {
+            "type": "formula",
+            "as": "origin_share",
+            "expr": "datum.total / datum.all_visits"
+          }
+        ]
+      },
+  
+      {
+        "name": "tiles",
+        "source": "origins",
+        "transform": [
+          {
+            "type": "fold",
+            "fields": ["adults", "children"],
+            "as": ["age_group", "visits"]
+          },
+          {
+            "type": "formula",
+            "as": "age_share",
+            "expr": "datum.visits / datum.total"
+          },
+          {
+            "type": "formula",
+            "as": "y0",
+            "expr": "datum.age_group === 'adults' ? 0 : datum.adults / datum.total"
+          },
+          {
+            "type": "formula",
+            "as": "y1",
+            "expr": "datum.age_group === 'adults' ? datum.adults / datum.total : 1"
+          },
+          {
+            "type": "formula",
+            "as": "center_y",
+            "expr": "(datum.y0 + datum.y1) / 2"
+          }
+        ]
+      }
+    ],
+  
+    "scales": [
+      {
+        "name": "x",
+        "type": "linear",
+        "domain": [0, 1],
+        "range": "width",
+        "nice": false,
+        "zero": true
+      },
+      {
+        "name": "y",
+        "type": "linear",
+        "domain": [0, 1],
+        "range": "height",
+        "nice": false,
+        "zero": true
+      },
+      {
+        "name": "ageColor",
+        "type": "ordinal",
+        "domain": ["adults", "children"],
+        "range": ["#1a6a52", "#f1bf77"]
+      }
+    ],
+  
+    "axes": [
+      {
+        "scale": "y",
+        "orient": "left",
+        "title": "Share of visits within origin",
+        "values": [0, 0.25, 0.5, 0.75, 1],
+        "format": ".0%",
+        "grid": true,
+        "gridColor": "#e8ece8",
+        "labelFontSize": 11,
+        "titleFontSize": 12
+      }
+    ],
+  
+    "legends": [
+      {
+        "fill": "ageColor",
+        "orient": "top",
+        "direction": "horizontal",
+        "title": null,
+        "symbolType": "square",
+        "symbolSize": 110,
+        "labelFontSize": 12
+      }
+    ],
+  
+    "marks": [
+      {
+        "name": "mosaicTiles",
+        "type": "rect",
+        "from": {
+          "data": "tiles"
+        },
+        "encode": {
+          "update": {
+            "x": {
+              "scale": "x",
+              "field": "x0"
+            },
+            "x2": {
+              "scale": "x",
+              "field": "x1"
+            },
+            "y": {
+              "scale": "y",
+              "field": "y1"
+            },
+            "y2": {
+              "scale": "y",
+              "field": "y0"
+            },
+            "fill": {
+              "scale": "ageColor",
+              "field": "age_group"
+            },
+            "stroke": {
+              "value": "white"
+            },
+            "strokeWidth": {
+              "value": 3
+            },
+            "tooltip": {
+              "signal": "{'Origin': datum.origin, 'Age group': datum.age_group === 'adults' ? 'Adults' : 'Children', 'Estimated visits': format(datum.visits, ',.2f'), 'Share within origin': format(datum.age_share, '.2%'), 'Origin share of all visits': format(datum.origin_share, '.2%')}"
+            }
+          },
+          "hover": {
+            "stroke": {
+              "value": "#26372e"
+            },
+            "strokeWidth": {
+              "value": 2
+            }
+          }
+        }
+      },
+  
+      {
+        "type": "text",
+        "from": {
+          "data": "tiles"
+        },
+        "interactive": false,
+        "encode": {
+          "update": {
+            "x": {
+              "scale": "x",
+              "field": "center_x"
+            },
+            "y": {
+              "scale": "y",
+              "field": "center_y"
+            },
+            "text": {
+              "signal": "(datum.age_group === 'adults' ? 'Adults' : 'Children') + '\\n' + format(datum.age_share, '.1%')"
+            },
+            "lineBreak": {
+              "value": "\n"
+            },
+            "lineHeight": {
+              "value": 17
+            },
+            "align": {
+              "value": "center"
+            },
+            "baseline": {
+              "value": "middle"
+            },
+            "fontSize": {
+              "value": 13
+            },
+            "fontWeight": {
+              "value": 600
+            },
+            "fill": {
+              "signal": "datum.age_group === 'adults' ? '#ffffff' : '#352713'"
+            }
+          }
+        }
+      },
+  
+      {
+        "type": "text",
+        "from": {
+          "data": "origins"
+        },
+        "interactive": false,
+        "encode": {
+          "update": {
+            "x": {
+              "scale": "x",
+              "field": "center_x"
+            },
+            "y": {
+              "signal": "height + 18"
+            },
+            "text": {
+              "field": "origin"
+            },
+            "fontSize": {
+              "value": 13
+            },
+            "fontWeight": {
+              "value": "bold"
+            },
+            "fill": {
+              "value": "#223d30"
+            },
+            "align": {
+              "value": "center"
+            },
+            "baseline": {
+              "value": "top"
+            }
+          }
+        }
+      },
+  
+      {
+        "type": "text",
+        "from": {
+          "data": "origins"
+        },
+        "interactive": false,
+        "encode": {
+          "update": {
+            "x": {
+              "scale": "x",
+              "field": "center_x"
+            },
+            "y": {
+              "signal": "height + 38"
+            },
+            "text": {
+              "signal": "format(datum.origin_share, '.1%') + ' of visits'"
+            },
+            "fontSize": {
+              "value": 12
+            },
+            "fill": {
+              "value": "#586c60"
+            },
+            "align": {
+              "value": "center"
+            },
+            "baseline": {
+              "value": "top"
+            }
+          }
+        }
+      }
+    ],
+  
+    "config": {
+      "view": {
+        "stroke": null
+      }
+    }
+  }
+  

@@ -1,0 +1,199 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Matched NSW parks across CAPAD 2024 area, years since original protected-area gazettal and NSW NPWS annual domestic visits in FY2024-25. Values are normalized within the matched subset. Area is log-transformed before normalization.",
+  "title": {
+    "text": "What Distinguishes NSW's Most Visited Parks?",
+    "subtitle": "Each line is one matched park. Axis positions are relative (0 = lowest, 1 = highest).",
+    "anchor": "middle",
+    "fontSize": 19,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555555",
+    "offset": 20
+  },
+  "background": "white",
+  "width": 760,
+  "height": 380,
+  "data": {
+    "url": "data/nsw_park_parallel_coordinates.csv",
+    "format": {
+      "type": "csv",
+      "parse": {
+        "area_km2": "number",
+        "first_protected_year": "number",
+        "years_protected": "number",
+        "annual_visits": "number"
+      }
+    }
+  },
+  "params": [
+    {
+      "name": "selectedPark",
+      "value": "All parks",
+      "bind": {
+        "input": "select",
+        "name": "Highlight park: ",
+        "options": [
+          "All parks",
+          "Blue Mountains",
+          "Royal",
+          "Ku-ring-gai Chase",
+          "Lane Cove",
+          "Kosciuszko",
+          "Sydney Harbour",
+          "Brisbane Water",
+          "Morton",
+          "Bouddi",
+          "Tomaree",
+          "Kamay Botany Bay",
+          "Garigal",
+          "Berowra Valley",
+          "Georges River"
+        ]
+      }
+    }
+  ],
+  "transform": [
+    {
+      "filter": "isValid(datum.area_km2) && datum.area_km2 > 0 && isValid(datum.years_protected) && isValid(datum.annual_visits)"
+    },
+    {
+      "calculate": "log(datum.area_km2 + 1)",
+      "as": "log_area"
+    },
+    {
+      "fold": ["log_area", "years_protected", "annual_visits"],
+      "as": ["metric_field", "metric_value"]
+    },
+    {
+      "calculate": "datum.metric_field === 'log_area' ? 'Park area' : datum.metric_field === 'years_protected' ? 'Years protected' : 'Annual visits'",
+      "as": "metric"
+    },
+    {
+      "calculate": "datum.metric_field === 'log_area' ? 0 : datum.metric_field === 'years_protected' ? 1 : 2",
+      "as": "axis_order"
+    },
+    {
+      "joinaggregate": [
+        {"op": "min", "field": "metric_value", "as": "metric_min"},
+        {"op": "max", "field": "metric_value", "as": "metric_max"}
+      ],
+      "groupby": ["metric_field"]
+    },
+    {
+      "calculate": "datum.metric_max === datum.metric_min ? 0.5 : (datum.metric_value - datum.metric_min) / (datum.metric_max - datum.metric_min)",
+      "as": "normalised"
+    }
+  ],
+  "encoding": {
+    "x": {
+      "field": "metric",
+      "type": "ordinal",
+      "sort": ["Park area (log)", "Years protected", "Annual visits"],
+      "axis": {
+        "title": null,
+        "labelAngle": 0,
+        "labelFontSize": 13,
+        "labelFontWeight": "bold",
+        "labelPadding": 12,
+        "tickSize": 0,
+        "domain": false
+      }
+    },
+    "y": {
+      "field": "normalised",
+      "type": "quantitative",
+      "scale": {"domain": [0, 1]},
+      "axis": {
+        "title": "Relative position among matched parks",
+        "values": [0, 0.25, 0.5, 0.75, 1],
+        "format": ".0f",
+        "grid": true,
+        "gridColor": "#e6ebe8",
+        "labelFontSize": 11,
+        "titleFontSize": 12,
+        "titlePadding": 12
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#aabdb2",
+        "strokeWidth": 1.5
+      },
+      "encoding": {
+        "y": {"datum": 0},
+        "y2": {"datum": 1}
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "linear"
+      },
+      "encoding": {
+        "detail": {"field": "park", "type": "nominal"},
+        "order": {"field": "axis_order", "type": "quantitative"},
+        "color": {
+          "condition": {
+            "test": "selectedPark !== 'All parks' && datum.park === selectedPark",
+            "value": "#d45e26"
+          },
+          "value": "#286e54"
+        },
+        "opacity": {
+          "condition": {
+            "test": "selectedPark === 'All parks' || datum.park === selectedPark",
+            "value": 0.85
+          },
+          "value": 0.10
+        },
+        "strokeWidth": {
+          "condition": {
+            "test": "selectedPark !== 'All parks' && datum.park === selectedPark",
+            "value": 4
+          },
+          "value": 1.7
+        },
+        "tooltip": [
+          {"field": "park", "type": "nominal", "title": "National park"},
+          {"field": "area_km2", "type": "quantitative", "title": "Park area (km²)", "format": ",.2f"},
+          {"field": "years_protected", "type": "quantitative", "title": "Years since initial protection", "format": ",.2f"},
+          {"field": "first_protected_year", "type": "ordinal", "title": "First protected year"},
+          {"field": "annual_visits", "type": "quantitative", "title": "Annual domestic visits", "format": ",.2f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 70},
+      "encoding": {
+        "color": {
+          "condition": {
+            "test": "selectedPark !== 'All parks' && datum.park === selectedPark",
+            "value": "#d45e26"
+          },
+          "value": "#286e54"
+        },
+        "opacity": {
+          "condition": {
+            "test": "selectedPark === 'All parks' || datum.park === selectedPark",
+            "value": 0.85
+          },
+          "value": 0.10
+        },
+        "tooltip": [
+          {"field": "park", "type": "nominal", "title": "National park"},
+          {"field": "area_km2", "type": "quantitative", "title": "Area (km²)", "format": ",.2f"},
+          {"field": "years_protected", "type": "quantitative", "title": "Years protected", "format": ",.2f"},
+          {"field": "first_protected_year", "type": "ordinal", "title": "Original gazettal year"},
+          {"field": "annual_visits", "type": "quantitative", "title": "Annual domestic visits", "format": ",.2f"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "axis": {"labelFont": "Arial", "titleFont": "Arial"}
+  }
+}

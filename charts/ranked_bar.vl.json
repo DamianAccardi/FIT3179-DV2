@@ -1,0 +1,78 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Top 15 NSW NPWS-managed parks and reserves by domestic visits, 2024–25.",
+  "background": "white",
+  "title": {
+    "text": "What Are NSW's 15 Most Visited Parks and Reserves?",
+    "subtitle": "Estimated domestic visits in 2024–25; top three highlighted",
+    "anchor": "middle",
+    "fontSize": 19,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#555555",
+    "offset": 18
+  },
+  "width": 670,
+  "height": {"step": 32},
+  "data": {
+    "url": "data/nsw_most_visited_parks_2024_25.csv",
+    "format": {"type": "csv", "parse": {"visits": "number"}}
+  },
+  "transform": [
+    {"filter": "isValid(datum.visits) && datum.visits > 0"},
+    {
+      "window": [{"op": "rank", "as": "rank"}],
+      "sort": [{"field": "visits", "order": "descending"}]
+    },
+    {"filter": "datum.rank <= 15"},
+    {"calculate": "datum.rank + '. ' + datum.park", "as": "ranked_park"},
+    {"calculate": "datum.visits / 1000000", "as": "visits_millions"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "ranked_park",
+      "type": "nominal",
+      "title": null,
+      "sort": {"field": "rank", "op": "min", "order": "ascending"},
+      "axis": {"labelFontSize": 12, "labelLimit": 300, "ticks": false, "domain": false}
+    },
+    "x": {
+      "field": "visits",
+      "type": "quantitative",
+      "title": "Estimated domestic visits (2024–25)",
+      "scale": {"domain": [0, 9000000]},
+      "axis": {
+        "format": "~s",
+        "grid": true,
+        "gridColor": "#e6ece8",
+        "tickCount": 7,
+        "titleFontSize": 13,
+        "labelFontSize": 11,
+        "titlePadding": 12
+      }
+    },
+    "tooltip": [
+      {"field": "rank", "type": "quantitative", "title": "Rank", "format": ".0f"},
+      {"field": "park", "type": "nominal", "title": "Park or reserve"},
+      {"field": "visits", "type": "quantitative", "title": "Domestic visits", "format": ",.2f"},
+      {"field": "visits_millions", "type": "quantitative", "title": "Visits (millions)", "format": ".2f"}
+    ]
+  },
+  "layer": [
+    {
+      "mark": {"type": "bar", "cornerRadiusEnd": 3, "size": 23},
+      "encoding": {
+        "color": {
+          "condition": {"test": "datum.rank <= 3", "value": "#175b40"},
+          "value": "#90b9a0"
+        }
+      }
+    },
+    {
+      "mark": {"type": "text", "align": "left", "baseline": "middle", "dx": 7, "fontSize": 11, "fontWeight": "bold", "color": "#244633"},
+      "encoding": {
+        "text": {"field": "visits_millions", "type": "quantitative", "format": ".2f"}
+      }
+    }
+  ],
+  "config": {"view": {"stroke": null}, "axis": {"labelFont": "Arial", "titleFont": "Arial"}}
+}

@@ -1,0 +1,139 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+    "description": "Relationship between CAPAD 2024 park area and FY2024-25 estimated domestic visits for exactly matched NSW national parks.",
+    "background": "white",
+    "width": 720,
+    "height": 420,
+    "title": {
+      "text": "Do Larger National Parks Attract More Visitors?",
+      "subtitle": "Matched NSW national parks: CAPAD 2024 area vs 2024–25 domestic visits",
+      "anchor": "middle",
+      "fontSize": 19,
+      "subtitleFontSize": 12,
+      "subtitleColor": "#555555",
+      "offset": 18
+    },
+    "data": {
+      "url": "data/nsw_park_area_visits.csv",
+      "format": {
+        "type": "csv",
+        "parse": {
+          "area_km2": "number",
+          "annual_visits": "number"
+        }
+      }
+    },
+    "transform": [
+      {
+        "filter": "isValid(datum.area_km2) && datum.area_km2 > 0 && isValid(datum.annual_visits) && datum.annual_visits > 0"
+      },
+      {
+        "calculate": "datum.annual_visits / 1000000",
+        "as": "visits_millions"
+      }
+    ],
+    "params": [
+      {
+        "name": "selectedPark",
+        "select": {
+          "type": "point",
+          "fields": ["park"],
+          "on": "click",
+          "clear": "dblclick"
+        }
+      }
+    ],
+    "mark": {
+      "type": "circle",
+      "size": 140,
+      "stroke": "white",
+      "strokeWidth": 1.5,
+      "opacity": 0.9
+    },
+    "encoding": {
+      "x": {
+        "field": "area_km2",
+        "type": "quantitative",
+        "title": "National park area (km², logarithmic scale)",
+        "scale": {
+          "type": "log",
+          "base": 10
+        },
+        "axis": {
+          "format": "~s",
+          "grid": true,
+          "gridColor": "#e7ede8",
+          "labelFontSize": 11,
+          "titleFontSize": 13,
+          "titlePadding": 12
+        }
+      },
+      "y": {
+        "field": "visits_millions",
+        "type": "quantitative",
+        "title": "Domestic visits in 2024–25 (millions)",
+        "scale": {
+          "zero": true
+        },
+        "axis": {
+          "format": ".1f",
+          "grid": true,
+          "gridColor": "#e7ede8",
+          "labelFontSize": 11,
+          "titleFontSize": 13,
+          "titlePadding": 12
+        }
+      },
+      "color": {
+        "condition": {
+          "param": "selectedPark",
+          "empty": false,
+          "value": "#cf6b31"
+        },
+        "value": "#277450"
+      },
+      "opacity": {
+        "condition": {
+          "param": "selectedPark",
+          "empty": true,
+          "value": 0.9
+        },
+        "value": 0.15
+      },
+      "tooltip": [
+        {
+          "field": "park",
+          "type": "nominal",
+          "title": "National park"
+        },
+        {
+          "field": "area_km2",
+          "type": "quantitative",
+          "title": "Park area (km²)",
+          "format": ",.2f"
+        },
+        {
+          "field": "annual_visits",
+          "type": "quantitative",
+          "title": "Domestic visits",
+          "format": ",.2f"
+        },
+        {
+          "field": "visits_millions",
+          "type": "quantitative",
+          "title": "Visits (millions)",
+          "format": ".2f"
+        }
+      ]
+    },
+    "config": {
+      "view": {
+        "stroke": null
+      },
+      "axis": {
+        "labelFont": "Arial",
+        "titleFont": "Arial"
+      }
+    }
+  }
+  
