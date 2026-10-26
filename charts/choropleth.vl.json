@@ -1,148 +1,104 @@
 
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "description": "Total area of non-overlapping national parks by Australian state and territory, CAPAD 2024.",
+  "background": "white",
+  "width": 760,
+  "height": 480,
 
   "title": {
-    "text": "NSW National Parks: Where Do Australians Visit?",
-    "subtitle": "Selected national parks: domestic visits in 2024–25",
+    "text": "Which States Have the Most Land Protected as National Parks?",
+    "subtitle": "Total national park area in hectares — CAPAD 2024",
     "anchor": "middle",
-    "fontSize": 20,
-    "subtitleFontSize": 13,
+    "fontSize": 19,
+    "subtitleFontSize": 12,
     "subtitleColor": "#555555",
-    "offset": 15
+    "offset": 20
   },
 
-  "width": 650,
-  "height": 520,
-  "background": "white",
-  "padding": 10,
-
-  "projection": {
-    "type": "identity",
-    "reflectY": true
+  "data": {
+    "url": "data/australian_states.geojson",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
   },
 
-  "layer": [
+  "transform": [
     {
-      "description": "NSW state background",
-
-      "data": {
-        "url": "data/nsw_state_outline.geojson",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
-      },
-
-      "mark": {
-        "type": "geoshape",
-        "fill": "#e6e9e6",
-        "stroke": "#555555",
-        "strokeWidth": 1.5
-      }
+      "calculate": "datum.properties.STATE_NAME",
+      "as": "state_name"
     },
-
     {
-      "description": "National parks coloured by domestic visits",
-
-      "data": {
-        "url": "data/nsw_park_boundaries.geojson",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
-      },
-
-      "transform": [
-        {
-          "lookup": "properties.park",
-          "from": {
-            "data": {
-              "url": "data/capad_2024.csv",
-              "format": {
-                "type": "csv"
-              }
-            },
-            "key": "park",
-            "fields": [
-              "park_area_ha",
-              "reserve_type"
-            ]
+      "lookup": "state_name",
+      "from": {
+        "data": {
+          "url": "data/national_park_area_by_state.csv",
+          "format": {
+            "type": "csv",
+            "parse": {
+              "area_ha": "number",
+              "area_km2": "number"
+            }
           }
         },
-        {
-          "lookup": "properties.park",
-          "from": {
-            "data": {
-              "url": "data/nsw_park_visitors_2024_25.csv",
-              "format": {
-                "type": "csv"
-              }
-            },
-            "key": "park",
-            "fields": [
-              "visits"
-            ]
-          }
-        },
-        {
-          "filter": "isValid(datum.visits) && isValid(datum.park_area_ha)"
-        }
-      ],
-
-      "mark": {
-        "type": "geoshape",
-        "stroke": "#354e3b",
-        "strokeWidth": 0.6,
-        "fillOpacity": 0.95
-      },
-
-      "encoding": {
-        "color": {
-          "field": "visits",
-          "type": "quantitative",
-          "scale": {
-            "scheme": "greens"
-          },
-          "legend": {
-            "title": "Estimated domestic visits",
-            "orient": "bottom",
-            "direction": "horizontal",
-            "gradientLength": 300,
-            "gradientThickness": 14,
-            "format": ".2s",
-            "labelFontSize": 12,
-            "titleFontSize": 13
-          }
-        },
-
-        "tooltip": [
-          {
-            "field": "properties.park",
-            "type": "nominal",
-            "title": "National park"
-          },
-          {
-            "field": "visits",
-            "type": "quantitative",
-            "title": "Domestic visits",
-            "format": ",.0f"
-          },
-          {
-            "field": "park_area_ha",
-            "type": "quantitative",
-            "title": "Park area (ha)",
-            "format": ",.0f"
-          },
-          {
-            "field": "reserve_type",
-            "type": "nominal",
-            "title": "Reserve type"
-          }
+        "key": "state",
+        "fields": [
+          "area_ha",
+          "area_km2"
         ]
       }
     }
   ],
+
+  "projection": {
+    "type": "mercator"
+  },
+
+  "mark": {
+    "type": "geoshape",
+    "stroke": "#ffffff",
+    "strokeWidth": 1.5
+  },
+
+  "encoding": {
+    "color": {
+      "field": "area_ha",
+      "type": "quantitative",
+      "title": "National park area (ha)",
+      "scale": {
+        "scheme": "greens"
+      },
+      "legend": {
+        "orient": "right",
+        "gradientLength": 230,
+        "gradientThickness": 18,
+        "format": "~s",
+        "titleFontSize": 12,
+        "labelFontSize": 11
+      }
+    },
+
+    "tooltip": [
+      {
+        "field": "state_name",
+        "type": "nominal",
+        "title": "State or territory"
+      },
+      {
+        "field": "area_ha",
+        "type": "quantitative",
+        "title": "National park area (ha)",
+        "format": ",.2f"
+      },
+      {
+        "field": "area_km2",
+        "type": "quantitative",
+        "title": "National park area (km²)",
+        "format": ",.2f"
+      }
+    ]
+  },
 
   "config": {
     "view": {

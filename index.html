@@ -1,13 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Exploring Australia's National Parks | FIT3179</title>
 
-  <!-- Vega 6, Vega-Lite 6, and Vega-Embed 7 -->
+  <!-- Vega, Vega-Lite and Vega-Embed -->
   <script src="https://cdn.jsdelivr.net/npm/vega@6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@6"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@7"></script>
@@ -21,7 +22,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background: #ffffff;
+      background-color: #ffffff;
       color: #172b1d;
       line-height: 1.6;
     }
@@ -31,6 +32,10 @@
       margin: 0 auto;
       padding: 40px 25px;
     }
+
+    /* ===================================== */
+    /* HEADER                                */
+    /* ===================================== */
 
     header {
       text-align: center;
@@ -50,6 +55,10 @@
       color: #455a49;
     }
 
+    /* ===================================== */
+    /* SECTIONS                              */
+    /* ===================================== */
+
     section {
       margin-bottom: 75px;
     }
@@ -66,6 +75,10 @@
       margin-bottom: 25px;
     }
 
+    /* ===================================== */
+    /* VISUALISATIONS                        */
+    /* ===================================== */
+
     .visualisation-container {
       display: flex;
       justify-content: center;
@@ -75,8 +88,8 @@
     }
 
     .chart {
-      max-width: 100%;
       width: 100%;
+      max-width: 100%;
       text-align: center;
     }
 
@@ -90,6 +103,10 @@
       height: auto;
     }
 
+    /* ===================================== */
+    /* SOURCES                               */
+    /* ===================================== */
+
     .source {
       font-size: 13px;
       color: #666666;
@@ -100,11 +117,19 @@
       color: #176b43;
     }
 
+    /* ===================================== */
+    /* DIVIDERS                              */
+    /* ===================================== */
+
     hr {
       border: none;
       border-top: 1px solid #dddddd;
       margin: 55px 0;
     }
+
+    /* ===================================== */
+    /* FOOTER                                */
+    /* ===================================== */
 
     footer {
       border-top: 1px solid #dddddd;
@@ -115,7 +140,12 @@
       color: #777777;
     }
 
+    /* ===================================== */
+    /* RESPONSIVE DESIGN                     */
+    /* ===================================== */
+
     @media (max-width: 768px) {
+
       .container {
         padding: 25px 15px;
       }
@@ -141,40 +171,58 @@
 </head>
 
 <body>
+
   <div class="container">
 
     <!-- ===================================== -->
-    <!-- HEADER                               -->
+    <!-- MAIN HEADER                          -->
     <!-- ===================================== -->
 
     <header>
+
       <h1>Exploring Australia's National Parks</h1>
 
       <p class="intro">
-        Explore where Australia's national parks are located,
-        which parks attract the most visitors, how park sizes
-        and protection dates vary, and how visitation has
-        changed over time and relates to protected land area.
+        Explore Australia's national parks through their
+        geographic distribution, protected land area,
+        history and visitor patterns.
+
+        Discover which states protect the greatest areas
+        of national park land, which parks attract the
+        most visitors, and how park visitation has
+        changed over time.
       </p>
+
     </header>
 
 
     <!-- ===================================== -->
-    <!-- CHART 1: CHOROPLETH MAP               -->
+    <!-- CHART 1: STATE CHOROPLETH MAP        -->
     <!-- ===================================== -->
 
     <section id="section-chart-1">
-      <h2>1. Where Do Australians Visit NSW National Parks?</h2>
+
+      <h2>1. Which States Have the Most Land Protected as National Parks?</h2>
 
       <p class="description">
-        National parks across New South Wales attract millions
-        of domestic visits each year.
+        National parks protect important natural landscapes
+        throughout Australia, but the total area protected
+        as national parks differs considerably between
+        states and territories.
 
-        This choropleth highlights selected parks, with darker
-        shades of green representing higher estimated domestic
-        visitation in 2024–25.
+        This choropleth map compares the total area of
+        national park land in each Australian state and
+        territory using CAPAD 2024 data.
 
-        Hover over a park to explore its visitation and land area.
+        Each state is coloured according to the combined
+        area of its national parks, measured in hectares.
+
+        Darker shades of green indicate greater total
+        national park area, while lighter shades represent
+        smaller areas.
+
+        Hover over a state to view its total national park
+        area in both hectares and square kilometres.
       </p>
 
       <div class="visualisation-container">
@@ -183,11 +231,31 @@
 
       <p class="source">
         Sources:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>;
-        <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey 2024–25</a>.
-        Selected parks only.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://github.com/rowanhogan/australian-states"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Australian states GeoJSON
+        </a>.
+
+        Values represent the combined mapped area of
+        non-overlapping national park records in CAPAD 2024.
+
+        The map compares absolute protected area rather
+        than the percentage of each state protected.
+        Other protected-area categories are excluded.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -197,15 +265,21 @@
     <!-- ===================================== -->
 
     <section id="section-chart-2">
+
       <h2>2. Where Are Australia's National Parks Concentrated?</h2>
 
       <p class="description">
         National parks are distributed across Australia,
         from coastal regions to remote inland landscapes.
 
-        Each dot represents a park location recorded by CAPAD
-        2024. Use the state filter to explore different regions,
-        and hover over dots for park names, state and area.
+        Each green dot represents a national park location
+        recorded in CAPAD 2024.
+
+        Use the state filter to explore park locations
+        within different states and territories.
+
+        Hover over individual dots to see the park name,
+        state and recorded land area.
       </p>
 
       <div class="visualisation-container">
@@ -214,11 +288,27 @@
 
       <p class="source">
         Sources:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>;
-        <a href="https://github.com/rowanhogan/australian-states" target="_blank" rel="noopener noreferrer">Australian states GeoJSON</a>.
-        Dots represent park locations, not exact boundaries.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://github.com/rowanhogan/australian-states"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Australian states GeoJSON
+        </a>.
+
+        Dots represent park locations rather than
+        exact geographic boundaries.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -228,17 +318,22 @@
     <!-- ===================================== -->
 
     <section id="section-chart-3">
+
       <h2>3. Where Are NSW's Most Visited National Parks?</h2>
 
       <p class="description">
-        This map compares selected NSW national parks using
-        circles positioned at their geographic locations.
+        Some national parks receive significantly more
+        visits than others.
 
-        Larger circles indicate more estimated domestic visits
-        in 2024–25.
+        This map compares selected NSW national parks
+        using proportional circles positioned at their
+        geographic locations.
 
-        Hover over a circle to explore its park name and
-        visit estimate.
+        Larger circles indicate greater estimated domestic
+        visitation during 2024–25.
+
+        Hover over each circle to view its park name
+        and estimated number of domestic visits.
       </p>
 
       <div class="visualisation-container">
@@ -247,11 +342,27 @@
 
       <p class="source">
         Sources:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>;
-        <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey 2024–25</a>.
-        Selected parks only.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
+
+        Selected parks only. Circle area represents
+        estimated domestic visits.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -261,19 +372,28 @@
     <!-- ===================================== -->
 
     <section id="section-chart-4">
+
       <h2>4. Which National Parks Protect the Most Land?</h2>
 
       <p class="description">
-        Australia's national parks vary dramatically in size.
+        Australia's national parks vary dramatically
+        in size.
 
-        This treemap compares the 40 largest national parks
-        recorded in CAPAD 2024.
+        While some protect relatively small areas,
+        others cover vast landscapes across the country.
 
-        Each rectangle represents a park, with rectangle area
-        proportional to protected land area and colour representing
-        its state or territory.
+        This treemap compares the 40 largest national
+        parks recorded in CAPAD 2024.
 
-        Hover to explore park names and area.
+        Each rectangle represents a park, with its area
+        proportional to the amount of protected land.
+
+        Colours distinguish Australian states and
+        territories.
+
+        Hover over a rectangle to explore the park's
+        name, state and area in hectares and
+        square kilometres.
       </p>
 
       <div class="visualisation-container">
@@ -282,10 +402,20 @@
 
       <p class="source">
         Source:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>.
-        The 40 largest parks by mapped non-overlapping protected area.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+
+        The 40 largest parks by mapped non-overlapping
+        national park area.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -295,16 +425,24 @@
     <!-- ===================================== -->
 
     <section id="section-chart-5">
+
       <h2>5. When Were Australia's National Parks First Protected?</h2>
 
       <p class="description">
-        This heatmap groups the original protected-area gazettal
-        dates of currently listed national parks by state and decade.
+        Australia's national park network has developed
+        over many decades.
 
-        Darker cells represent decades in which more of those parks
-        were first protected.
+        This heatmap groups currently listed national
+        parks according to their original protected-area
+        gazettal dates.
 
-        Hover over a cell to examine the number of parks.
+        Each column represents a decade, while each
+        row represents a state or territory.
+
+        Darker green cells indicate a greater number
+        of parks first protected during that period.
+
+        Hover over a cell to view the number of parks.
       </p>
 
       <div class="visualisation-container">
@@ -313,10 +451,20 @@
 
       <p class="source">
         Source:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>.
-        Original protection may precede national park designation.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+
+        Original protection dates may precede
+        national park designation.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -326,18 +474,26 @@
     <!-- ===================================== -->
 
     <section id="section-chart-6">
+
       <h2>6. How Does National Park Size Differ Between States?</h2>
 
       <p class="description">
-        This box-and-whisker plot compares the distribution of
-        park sizes across Australian states and territories.
+        National parks vary considerably in size across
+        Australia, from small protected areas to vast
+        landscapes covering thousands of square kilometres.
 
-        Boxes show the middle half of park sizes, while whiskers
-        and outliers reveal variation.
+        This box-and-whisker plot compares the distribution
+        of national park sizes across states and territories.
 
-        Orange diamonds identify the largest park in each state.
+        Boxes show the middle half of the park-size
+        distribution, while whiskers and outliers
+        demonstrate variation.
 
-        Park area is displayed on a logarithmic horizontal axis.
+        Orange diamonds identify the largest national
+        park in each state.
+
+        The horizontal axis uses a logarithmic scale
+        to accommodate large differences in size.
       </p>
 
       <div class="visualisation-container">
@@ -346,10 +502,19 @@
 
       <p class="source">
         Source:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>.
+
         Area is measured in square kilometres.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -359,19 +524,27 @@
     <!-- ===================================== -->
 
     <section id="section-chart-7">
+
       <h2>7. How Does Age Composition Vary by Visitor Origin?</h2>
 
       <p class="description">
-        This mosaic chart compares adult and child visits
-        to NSW NPWS-managed parks and reserves from Sydney,
-        Regional NSW and interstate.
+        Adult and child visits to NSW parks and reserves
+        vary depending on visitor origin.
 
-        The width of a column represents its share of domestic
-        visits, while the coloured sections show adult and child
-        proportions.
+        This mosaic chart compares domestic visits from
+        Sydney, Regional NSW and interstate visitors.
 
-        Interstate visits have the highest child proportion,
-        at approximately 29.3%.
+        Each column's width represents its share of
+        total domestic visits, while coloured sections
+        represent the proportions of visits made by
+        adults and children.
+
+        Interstate visits have the highest child
+        proportion at approximately 29.3%, compared
+        with 17.7% for Sydney and 14.9% for Regional NSW.
+
+        Hover over rectangles for visit estimates
+        and percentages.
       </p>
 
       <div class="visualisation-container">
@@ -380,10 +553,20 @@
 
       <p class="source">
         Source:
-        <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey 2024–25</a>.
-        Domestic visits, rather than unique visitors.
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
+
+        Figures represent domestic visits,
+        not unique visitors.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -393,19 +576,29 @@
     <!-- ===================================== -->
 
     <section id="section-chart-8">
+
       <h2>8. What Distinguishes NSW's Most Visited National Parks?</h2>
 
       <p class="description">
-        This parallel coordinates plot compares selected NSW
-        parks across area, years since first protection and
-        annual domestic visits.
+        Are NSW's most frequently visited national parks
+        also the largest or longest protected?
 
-        Each line represents one matched park.
+        This parallel coordinates plot compares selected
+        NSW parks across three characteristics:
+        park area, years since initial protection,
+        and annual domestic visits.
 
-        The measures are normalised to a common scale and the
-        park-area dimension is logarithmically transformed.
+        Each line represents one park, connecting
+        its measurements across the three dimensions.
 
-        Use the park dropdown to highlight individual lines.
+        Values are normalised between 0 and 1 to
+        enable comparisons between different units.
+
+        Park area is logarithmically transformed
+        before normalisation.
+
+        Use the dropdown menu to highlight individual
+        national parks and explore their characteristics.
       </p>
 
       <div class="visualisation-container">
@@ -414,12 +607,27 @@
 
       <p class="source">
         Sources:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>;
-        <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey 2024–25</a>.
-        Only parks matched across datasets with complete records
-        are shown; years protected are relative to 2024.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
+
+        Includes matched parks with complete records.
+        Years protected are calculated relative to 2024.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -429,18 +637,25 @@
     <!-- ===================================== -->
 
     <section id="section-chart-9">
+
       <h2>9. What Are NSW's 15 Most Visited Parks and Reserves?</h2>
 
       <p class="description">
-        This ranked bar chart shows the 15 NPWS-managed parks
-        and reserves receiving the most estimated domestic
-        visits during 2024–25.
+        NSW's most popular parks and reserves attract
+        millions of domestic visits annually.
 
-        Longer bars indicate more visits, and the top three
-        are highlighted in dark green.
+        This horizontal bar chart ranks the 15 most visited
+        NPWS-managed parks and reserves during 2024–25.
+
+        Longer bars represent more estimated annual
+        domestic visits, and the top three are highlighted
+        in dark green.
 
         Blue Mountains National Park leads the ranking
-        with about 7.83 million visits.
+        with approximately 7.83 million visits.
+
+        Hover over each bar to explore its ranking
+        and estimated visitation.
       </p>
 
       <div class="visualisation-container">
@@ -449,11 +664,21 @@
 
       <p class="source">
         Source:
-        <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey 2024–25</a>.
-        Figures represent visits, not unique visitors.
-        Includes national parks and other managed reserves.
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
+
+        The ranking includes national parks and other
+        NPWS-managed reserves.
+        Values represent visits rather than unique visitors.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -463,21 +688,30 @@
     <!-- ===================================== -->
 
     <section id="section-chart-10">
+
       <h2>10. How Has NSW Park Visitation Changed Since 2008?</h2>
 
       <p class="description">
         Domestic visits to NSW NPWS-managed parks and reserves
-        increased from 37.93 million in 2008 to a record
-        65.59 million in FY2024–25.
+        have increased substantially since 2008.
 
-        The trend also shows a fall between 2018 and 2020,
-        during the period affected by bushfires and COVID-19
-        restrictions, before recovering.
+        This line chart tracks estimated annual domestic
+        visits across nine survey periods from 2008
+        through the 2024–25 financial year.
 
-        Each point is an annual visit estimate for a survey year,
-        not an observation for every intervening year.
+        Visits increased from approximately 37.93 million
+        in 2008 to 65.59 million in FY2024–25.
 
-        Hover over a point to see total, adult and child visits.
+        The chart also highlights the decline between
+        2018 and 2020, followed by recovery in later
+        survey periods.
+
+        Each point represents an annual visit estimate
+        for a surveyed period rather than an observation
+        for every intervening year.
+
+        Hover over the points to compare total,
+        adult and child visits.
       </p>
 
       <div class="visualisation-container">
@@ -486,12 +720,22 @@
 
       <p class="source">
         Source:
-        <a href="https://www.environment.nsw.gov.au/sites/default/files/2026-04/NPWS_parks_visitation_survey_annual_report_fy24-25-optimised.pdf" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey FY2024–25, page 8</a>.
-        The earlier estimates cover calendar years, while FY2024–25
-        covers a financial year and uses an updated survey methodology.
-        Comparisons require caution.
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey FY2024–25
+        </a>.
+
+        Earlier estimates cover calendar years,
+        while FY2024–25 covers a financial year and
+        uses updated survey methodology.
+        Historical comparisons require caution.
       </p>
+
     </section>
+
 
     <hr>
 
@@ -501,33 +745,29 @@
     <!-- ===================================== -->
 
     <section id="section-chart-11">
+
       <h2>11. Do Larger National Parks Attract More Visitors?</h2>
 
       <p class="description">
         Does a larger protected area mean more visitors?
 
-        This scatterplot compares the land area of NSW national
-        parks with estimated annual domestic visits in 2024–25.
+        This scatterplot compares land area with estimated
+        domestic visitation for matched NSW national parks.
 
-        Each circle represents one park matched between CAPAD
-        2024 and the NSW Park Visitor Survey.
+        Each circle represents one national park.
 
-        Parks further to the right cover more land, while parks
-        higher on the chart receive more visits.
-      </p>
+        Parks further to the right cover more land,
+        while parks higher on the chart attract more
+        estimated domestic visits.
 
-      <p class="description">
-        The horizontal axis uses a logarithmic scale because
-        park areas vary greatly.
+        The horizontal axis uses a logarithmic scale
+        because park sizes vary substantially.
 
-        Click a circle to highlight a park and fade the others;
-        double-click to clear the selection.
+        Click a circle to highlight an individual park
+        and double-click to reset the selection.
 
-        Hover over circles to see the park name, area in square
-        kilometres and visit estimates, with numerical values
-        shown to two decimal places.
-
-        The plot shows association, not causation.
+        Hover over circles to view park names, areas
+        in square kilometres and annual visit estimates.
       </p>
 
       <div class="visualisation-container">
@@ -536,13 +776,26 @@
 
       <p class="source">
         Sources:
-        <a href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024" target="_blank" rel="noopener noreferrer">CAPAD 2024 (DCCEEW)</a>;
-        <a href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey" target="_blank" rel="noopener noreferrer">NSW NPWS Park Visitor Survey 2024–25</a>.
+        <a
+          href="https://www.dcceew.gov.au/environment/land/nrs/science/capad/2024"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          CAPAD 2024 (DCCEEW)
+        </a>;
+        <a
+          href="https://www.environment.nsw.gov.au/topics/parks-reserves-and-protected-areas/park-management/npws-park-management/park-visitor-survey"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          NSW NPWS Park Visitor Survey 2024–25
+        </a>.
 
-        Only matching NSW national parks with positive area
-        and estimated domestic visits are shown.
-        Visits are not unique visitors.
+        Includes matching NSW national parks with
+        positive land area and visitation estimates.
+        The chart shows association, not causation.
       </p>
+
     </section>
 
 
@@ -559,59 +812,86 @@
 
 
   <!-- ===================================== -->
-  <!-- VEGA AND VEGA-LITE VISUALISATIONS     -->
+  <!-- LOAD ALL 11 VISUALISATIONS            -->
   <!-- ===================================== -->
 
   <script>
 
     const charts = [
+
+      // Chart 1: National park area by state
       {
         id: "choropleth",
         spec: "charts/choropleth.vl.json"
       },
+
+      // Chart 2: National park locations
       {
         id: "dot_location_map",
         spec: "charts/dot_location_map.vl.json"
       },
+
+      // Chart 3: Proportional symbol map
       {
         id: "proportional_symbol_map",
         spec: "charts/proportional_symbol_map.vl.json"
       },
+
+      // Chart 4: Largest national parks
       {
         id: "national_park_treemap",
         spec: "charts/treemap.json"
       },
+
+      // Chart 5: Declaration heatmap
       {
         id: "national_park_heatmap",
         spec: "charts/heatmap.vl.json"
       },
+
+      // Chart 6: Park size boxplot
       {
         id: "park_size_boxplot",
         spec: "charts/park_size_boxplot.vl.json"
       },
+
+      // Chart 7: Visitor origin mosaic
       {
         id: "park_visitors_mosaic",
         spec: "charts/mosaic.json"
       },
+
+      // Chart 8: Parallel coordinates
       {
         id: "park_parallel_coordinates",
         spec: "charts/parallel_coordinates.vl.json"
       },
+
+      // Chart 9: Ranked visitation
       {
         id: "ranked_bar_chart",
         spec: "charts/ranked_bar.vl.json"
       },
+
+      // Chart 10: Historical visitation
       {
         id: "visitation_trend_chart",
         spec: "charts/visitation_trend.vl.json"
       },
+
+      // Chart 11: Area vs visitation
       {
         id: "area_vs_visitation_chart",
         spec: "charts/area_vs_visitation.vl.json"
       }
+
     ];
 
-    // Load all 11 charts
+
+    // =====================================
+    // Embed every visualisation
+    // =====================================
+
     charts.forEach(({ id, spec }) => {
 
       vegaEmbed(
@@ -623,7 +903,10 @@
         }
       ).catch(error => {
 
-        console.error(`Error loading ${spec}:`, error);
+        console.error(
+          `Error loading ${spec}:`,
+          error
+        );
 
         document.getElementById(id).textContent =
           `Unable to load ${spec}: ${error.message}`;
