@@ -74,5 +74,5 @@
       }
     }
   ],
-  "config": {"view": {"stroke": null}, "axis": {"labelFont": "Arial", "titleFont": "Arial"}}
+  "config": {"view": {"stroke": null}, "axis": {"labelFont": "Outfit, sans-serif", "titleFont": "Outfit, sans-serif"}}
 }

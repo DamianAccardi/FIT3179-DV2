@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.1.0/build/pure-min.css"
     integrity="sha384-kj0X2NG2KHBie8Tq8fH1kxnyWM9XsXQpq7XdwbKmFKjwwaXGKBlB2Klu3VOltSFx" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.1.0/build/grids-responsive-min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&amp;display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -834,17 +837,27 @@
     // Embed every visualisation
     // =====================================
 
-    charts.forEach(({ id, spec }) => {
+    // Load the typeface before Vega measures titles, labels and legends.
+    document.fonts.ready.then(() => {
+      const font = getComputedStyle(document.body).fontFamily;
+      const typography = {
+        axis: { labelFont: font, titleFont: font },
+        legend: { labelFont: font, titleFont: font },
+        title: { font, subtitleFont: font },
+        text: { font }
+      };
 
-      vegaEmbed(
-        `#${id}`,
-        spec,
-        {
-          actions: false,
-          renderer: "svg"
-        }
-      );
-
+      charts.forEach(({ id, spec }) => {
+        vegaEmbed(
+          `#${id}`,
+          spec,
+          {
+            actions: false,
+            renderer: "svg",
+            config: typography
+          }
+        );
+      });
     });
 
   </script>

@@ -194,6 +194,6 @@
   ],
   "config": {
     "view": {"stroke": null},
-    "axis": {"labelFont": "Arial", "titleFont": "Arial"}
+    "axis": {"labelFont": "Outfit, sans-serif", "titleFont": "Outfit, sans-serif"}
   }
 }

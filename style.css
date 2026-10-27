@@ -9,7 +9,7 @@
   --ink: #273a2e;
   --muted: #556459;
   --border: #dce3d7;
-  --font-body: "Segoe UI", Arial, sans-serif;
+  --font-body: "Outfit", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -28,6 +28,9 @@ body {
 }
 
 .pure-g [class*="pure-u"] { font-family: var(--font-body); }
+button, input, select, textarea { font-family: inherit; }
+.vega-embed svg text { font-family: var(--font-body); }
+#vg-tooltip-element { font-family: var(--font-body); }
 a { color: var(--green); text-underline-offset: 3px; }
 a:hover { color: var(--gold-dark); }
 
@@ -93,8 +96,8 @@ input:focus-visible,
 .hero .eyebrow { color: var(--gold); }
 
 h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: 500;
+  font-family: var(--font-body);
+  font-weight: 600;
   line-height: 1.15;
   text-wrap: balance;
 }
@@ -137,7 +140,7 @@ h1 span { display: block; color: var(--gold); }
 .hero-stat strong {
   display: block;
   color: var(--gold);
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
   font-size: 42px;
   font-weight: 400;
   line-height: 1.2;
@@ -194,7 +197,7 @@ h1 span { display: block; color: var(--gold); }
 }
 .chapter-number {
   color: #d9c68c;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
   font-size: 96px;
   line-height: 1;
   letter-spacing: -0.05em;
